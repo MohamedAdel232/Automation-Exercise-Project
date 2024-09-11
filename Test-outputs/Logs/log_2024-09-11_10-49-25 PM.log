@@ -1,0 +1,6 @@
+[INFO] 11-09-2024 22:49:25 [main] [Tests.TC02_SignupTest.setup(TC02_SignupTest.java:37)] - chrome is opened
+[INFO] 11-09-2024 22:49:29 [main] [Tests.TC02_SignupTest.setup(TC02_SignupTest.java:41)] - https://automationexercise.com/ website is opened
+[INFO] 11-09-2024 22:49:29 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: clickOnLoginButtonWithInvalidDataTC started
+[INFO] 11-09-2024 22:49:32 [main] [Tests.TC02_SignupTest.clickOnLoginButtonWithInvalidDataTC(TC02_SignupTest.java:92)] - User email: adelle.luettgen@gmail.com
+[INFO] 11-09-2024 22:49:32 [main] [Tests.TC02_SignupTest.clickOnLoginButtonWithInvalidDataTC(TC02_SignupTest.java:93)] - User password: 261
+[INFO] 11-09-2024 22:49:32 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: clickOnLoginButtonWithInvalidDataTC passed

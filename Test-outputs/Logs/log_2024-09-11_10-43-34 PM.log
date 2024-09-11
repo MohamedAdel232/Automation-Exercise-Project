@@ -1,0 +1,6 @@
+[INFO] 11-09-2024 22:43:35 [main] [Tests.TC02_SignupTest.setup(TC02_SignupTest.java:36)] - chrome is opened
+[INFO] 11-09-2024 22:43:41 [main] [Tests.TC02_SignupTest.setup(TC02_SignupTest.java:40)] - https://automationexercise.com/ website is opened
+[INFO] 11-09-2024 22:43:41 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: clickOnLoginButtonWithInvalidDataTC started
+[INFO] 11-09-2024 22:43:43 [main] [Tests.TC02_SignupTest.clickOnLoginButtonWithInvalidDataTC(TC02_SignupTest.java:91)] - User email: com.github.javafaker.Name@4c0884e8@gmail.com
+[INFO] 11-09-2024 22:43:43 [main] [Tests.TC02_SignupTest.clickOnLoginButtonWithInvalidDataTC(TC02_SignupTest.java:92)] - User password: 025
+[INFO] 11-09-2024 22:43:48 [main] [Listeners.iInvokedMethodListener.afterInvocation(iInvokedMethodListener.java:36)] - Test case: clickOnLoginButtonWithInvalidDataTC failed

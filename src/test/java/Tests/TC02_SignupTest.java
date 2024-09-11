@@ -4,6 +4,7 @@ import Listeners.iInvokedMethodListener;
 import Listeners.iTestResultListener;
 import Utilities.LogsUtils;
 import Utilities.Utility;
+import com.github.javafaker.Faker;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -22,6 +23,10 @@ import static Utilities.DataUtils.readDataFromProperties;
 
 @Listeners({iTestResultListener.class, iInvokedMethodListener.class})
 public class TC02_SignupTest {
+
+    // Fake data
+    String fakeEmail = new Faker().internet().emailAddress();
+    String fakePassword = new Faker().number().digits(3);
 
     private WebDriver driver;
 
@@ -66,9 +71,9 @@ public class TC02_SignupTest {
     }
 
     @Test
-    public void clickOnLoginButtonTC() throws IOException {
+    public void clickOnLoginButtonWithValidDataTC() throws IOException {
         new P01_HomePage(getDriver()).clickOnSignupButton()
-                .enterLoginData(readDataFromJsonFile("signupInformation", "email"),
+                .enterValidLoginData(readDataFromJsonFile("signupInformation", "email"),
                         readDataFromJsonFile("signupInformation", "password"))
                 .clickOnLoginButton();
 
@@ -76,6 +81,18 @@ public class TC02_SignupTest {
         LogsUtils.info("User password: " + readDataFromJsonFile("signupInformation", "password"));
 
         Assert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "HOME_URL")));
+    }
+
+    @Test
+    public void clickOnLoginButtonWithInvalidDataTC() throws IOException {
+        new P01_HomePage(getDriver()).clickOnSignupButton()
+                .enterValidLoginData(fakeEmail, fakePassword)
+                .clickOnLoginButton();
+
+        LogsUtils.info("User email: " + fakeEmail);
+        LogsUtils.info("User password: " + fakePassword);
+
+        Assert.assertTrue(new P02_SignupPage(getDriver()).checkIncorrectText());
     }
 
     @AfterMethod

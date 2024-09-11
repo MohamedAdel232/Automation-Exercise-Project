@@ -14,6 +14,7 @@ public class P02_SignupPage {
     private final By loginEmailLocator = By.xpath("// input [@data-qa='login-email']");
     private final By loginPasswordLocator = By.xpath("// input [@data-qa='login-password']");
     private final By loginButtonLocator = By.xpath("// button[@data-qa='login-button']");
+    private final By incorrectDataText = By.xpath("//*[@id=\"form\"]/div/div/div[1]/div/form/p");
 
     // Create a web driver
     private final WebDriver driver;
@@ -51,8 +52,15 @@ public class P02_SignupPage {
         return driver.findElement(loginToYourAccountLocator).isDisplayed();
     }
 
+    // Methode to enter valid log in data
+    public P02_SignupPage enterValidLoginData(String email, String password) {
+        Utility.sendData(driver, loginEmailLocator, email);
+        Utility.sendData(driver, loginPasswordLocator, password);
+        return this;
+    }
+
     // Methode to enter log in data
-    public P02_SignupPage enterLoginData(String email, String password) {
+    public P02_SignupPage enterInValidLoginData(String email, String password) {
         Utility.sendData(driver, loginEmailLocator, email);
         Utility.sendData(driver, loginPasswordLocator, password);
         return this;
@@ -62,5 +70,10 @@ public class P02_SignupPage {
     public P01_HomePage clickOnLoginButton() {
         Utility.clickOnElement(driver, loginButtonLocator);
         return new P01_HomePage(driver);
+    }
+
+    // Methode to check Your email or password is incorrect text
+    public boolean checkIncorrectText() {
+        return Utility.findWebElement(driver, incorrectDataText).isDisplayed();
     }
 }

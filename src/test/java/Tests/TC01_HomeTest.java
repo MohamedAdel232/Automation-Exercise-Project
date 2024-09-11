@@ -136,7 +136,7 @@ public class TC01_HomeTest {
     @Test
     public void verifyLoggedInAsUsernameTextTC() {
         new P01_HomePage(getDriver()).clickOnSignupButton()
-                .enterLoginData(readDataFromJsonFile("signupInformation", "email"),
+                .enterValidLoginData(readDataFromJsonFile("signupInformation", "email"),
                         readDataFromJsonFile("signupInformation", "password"))
                 .clickOnLoginButton();
 
@@ -149,7 +149,7 @@ public class TC01_HomeTest {
     @Test
     public void clickOnDeleteAccountButtonAfterSignInTC() throws IOException {
         new P01_HomePage(getDriver()).clickOnSignupButton()
-                .enterLoginData(readDataFromJsonFile("signupInformation", "email"),
+                .enterValidLoginData(readDataFromJsonFile("signupInformation", "email"),
                         readDataFromJsonFile("signupInformation", "password"))
                 .clickOnLoginButton()
                 .clickOnDeleteAccountButton();

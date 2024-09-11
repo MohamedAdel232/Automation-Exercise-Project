@@ -91,7 +91,7 @@ public class TC05_DeletedAccountTest {
     @Test
     public void clickOnContinueDeleteButtonAfterSignInTC() throws IOException {
         new P01_HomePage(getDriver()).clickOnSignupButton()
-                .enterLoginData(readDataFromJsonFile("signupInformation", "email"),
+                .enterValidLoginData(readDataFromJsonFile("signupInformation", "email"),
                         readDataFromJsonFile("signupInformation", "password"))
                 .clickOnLoginButton()
                 .clickOnDeleteAccountButton()
