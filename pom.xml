@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -25,13 +25,7 @@
         <shutterbugVersion>1.6</shutterbugVersion>
         <allure-mavenVersion>2.12.0</allure-mavenVersion>
         <allurePluginAPIVersion>2.30.0</allurePluginAPIVersion>
-        <suite.login>Test Runner/LoginSuite.xml</suite.login>
-        <suite.Landing>Test Runner/LandingSuite.xml</suite.Landing>
-        <suite.Cart>Test Runner/CartSuite.xml</suite.Cart>
-        <suite.Checkout>Test Runner/CheckoutSuite.xml</suite.Checkout>
-        <suite.Overview>Test Runner/OverviewSuite.xml</suite.Overview>
-        <suite.Finish>Test Runner/FinishSuite.xml</suite.Finish>
-        <suite.Regression>Test Runner/RegressionSuite.xml</suite.Regression>
+        <suite.RegisterUser>Test Runner/TestCase1_RegisterUser.xml</suite.RegisterUser>
     </properties>
 
     <build>
@@ -45,7 +39,9 @@
                     <execution>
                         <phase>test</phase>
                         <goals>
-
+                            <goal>
+                                serve
+                            </goal>
                         </goals>
                     </execution>
                 </executions>
@@ -63,7 +59,7 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <suiteXmlFiles>
-
+                        ${suite.RegisterUser}
                     </suiteXmlFiles>
                 </configuration>
                 <dependencies>

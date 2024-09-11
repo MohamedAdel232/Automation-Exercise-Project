@@ -1,0 +1,4 @@
+[INFO] 11-09-2024 19:54:46 [main] [Tests.TC05_DeletedAccountTest.setup(TC05_DeletedAccountTest.java:46)] - chrome is opened
+[INFO] 11-09-2024 19:54:49 [main] [Tests.TC05_DeletedAccountTest.setup(TC05_DeletedAccountTest.java:50)] - https://automationexercise.com/ website is opened
+[INFO] 11-09-2024 19:54:49 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: clickOnContinueDeleteButtonTC started
+[INFO] 11-09-2024 19:55:28 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: clickOnContinueDeleteButtonTC passed

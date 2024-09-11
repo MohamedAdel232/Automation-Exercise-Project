@@ -1,0 +1,16 @@
+[INFO] 11-09-2024 20:16:19 [main] [Tests.TC05_DeletedAccountTest.setup(TC05_DeletedAccountTest.java:46)] - chrome is opened
+[INFO] 11-09-2024 20:16:23 [main] [Tests.TC05_DeletedAccountTest.setup(TC05_DeletedAccountTest.java:50)] - https://automationexercise.com/ website is opened
+[INFO] 11-09-2024 20:16:23 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: clickOnContinueDeleteButtonTC started
+[INFO] 11-09-2024 20:16:34 [main] [Tests.TC05_DeletedAccountTest.clickOnContinueDeleteButtonTC(TC05_DeletedAccountTest.java:75)] - User name: Mohamed
+[INFO] 11-09-2024 20:16:34 [main] [Tests.TC05_DeletedAccountTest.clickOnContinueDeleteButtonTC(TC05_DeletedAccountTest.java:76)] - User email: mohmdadl232@gmail.com
+[INFO] 11-09-2024 20:16:34 [main] [Tests.TC05_DeletedAccountTest.clickOnContinueDeleteButtonTC(TC05_DeletedAccountTest.java:77)] - User firstName: Mohamed
+[INFO] 11-09-2024 20:16:34 [main] [Tests.TC05_DeletedAccountTest.clickOnContinueDeleteButtonTC(TC05_DeletedAccountTest.java:78)] - User lastName: Saadoun
+[INFO] 11-09-2024 20:16:34 [main] [Tests.TC05_DeletedAccountTest.clickOnContinueDeleteButtonTC(TC05_DeletedAccountTest.java:79)] - User company: HTI
+[INFO] 11-09-2024 20:16:34 [main] [Tests.TC05_DeletedAccountTest.clickOnContinueDeleteButtonTC(TC05_DeletedAccountTest.java:80)] - User address1: Sayed
+[INFO] 11-09-2024 20:16:34 [main] [Tests.TC05_DeletedAccountTest.clickOnContinueDeleteButtonTC(TC05_DeletedAccountTest.java:81)] - User address2: Hilimi
+[INFO] 11-09-2024 20:16:34 [main] [Tests.TC05_DeletedAccountTest.clickOnContinueDeleteButtonTC(TC05_DeletedAccountTest.java:82)] - User country: India
+[INFO] 11-09-2024 20:16:34 [main] [Tests.TC05_DeletedAccountTest.clickOnContinueDeleteButtonTC(TC05_DeletedAccountTest.java:83)] - User state: Giza
+[INFO] 11-09-2024 20:16:34 [main] [Tests.TC05_DeletedAccountTest.clickOnContinueDeleteButtonTC(TC05_DeletedAccountTest.java:84)] - User city: Faisal
+[INFO] 11-09-2024 20:16:34 [main] [Tests.TC05_DeletedAccountTest.clickOnContinueDeleteButtonTC(TC05_DeletedAccountTest.java:85)] - User zipcode: 123
+[INFO] 11-09-2024 20:16:34 [main] [Tests.TC05_DeletedAccountTest.clickOnContinueDeleteButtonTC(TC05_DeletedAccountTest.java:86)] - User mobileNumber: 01114037589
+[INFO] 11-09-2024 20:16:34 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: clickOnContinueDeleteButtonTC passed

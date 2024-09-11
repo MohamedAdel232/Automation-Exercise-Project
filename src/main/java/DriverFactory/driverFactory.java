@@ -18,16 +18,19 @@ public class driverFactory {
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--start-maximized");
+                chromeOptions.addArguments("--guest");
                 driverThreadLocal.set(new ChromeDriver(chromeOptions));
                 break;
             case "firefox":
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 firefoxOptions.addArguments("--start-maximized");
+                firefoxOptions.addArguments("--guest");
                 driverThreadLocal.set(new FirefoxDriver(firefoxOptions));
                 break;
             default:
                 EdgeOptions edgeOptions = new EdgeOptions();
                 edgeOptions.addArguments("--start-maximized");
+                edgeOptions.addArguments("--guest");
                 driverThreadLocal.set(new EdgeDriver(edgeOptions));
                 break;
         }
