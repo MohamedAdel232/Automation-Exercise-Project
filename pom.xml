@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>AutomationExercise</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>22</maven.compiler.source>
+        <maven.compiler.target>22</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <seleniumVersion>4.24.0</seleniumVersion>
+        <testNGVersion>7.10.2</testNGVersion>
+        <log4jVersion>2.23.0</log4jVersion>
+        <slf4jVersion>2.0.16</slf4jVersion>
+        <slf4jAPIVersion>2.0.16</slf4jAPIVersion>
+        <gsonVersion>2.11.0</gsonVersion>
+        <javaFakerVersion>1.0.2</javaFakerVersion>
+        <allureVersion>2.29.0</allureVersion>
+        <commonVersion>2.16.1</commonVersion>
+        <aspectj.version>1.9.22</aspectj.version>
+        <shutterbugVersion>1.6</shutterbugVersion>
+        <allure-mavenVersion>2.12.0</allure-mavenVersion>
+        <allurePluginAPIVersion>2.30.0</allurePluginAPIVersion>
+        <suite.login>Test Runner/LoginSuite.xml</suite.login>
+        <suite.Landing>Test Runner/LandingSuite.xml</suite.Landing>
+        <suite.Cart>Test Runner/CartSuite.xml</suite.Cart>
+        <suite.Checkout>Test Runner/CheckoutSuite.xml</suite.Checkout>
+        <suite.Overview>Test Runner/OverviewSuite.xml</suite.Overview>
+        <suite.Finish>Test Runner/FinishSuite.xml</suite.Finish>
+        <suite.Regression>Test Runner/RegressionSuite.xml</suite.Regression>
+    </properties>
+
+    <build>
+        <directory>test-outputs/target</directory>
+        <plugins>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>${allure-mavenVersion}</version>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <goals>
+
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <reportVersion>${allureVersion}</reportVersion>
+                </configuration>
+            </plugin>
+            <!-- Add the following options to your maven-surefire-plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
+                    <suiteXmlFiles>
+
+                    </suiteXmlFiles>
+                </configuration>
+                <dependencies>
+                    <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+                    <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>1.9.22</version>
+                        <scope>runtime</scope>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-plugin-api -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-plugin-api</artifactId>
+            <version>${allurePluginAPIVersion}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.assertthat</groupId>
+            <artifactId>selenium-shutterbug</artifactId>
+            <version>${shutterbugVersion}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-java</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commonVersion}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allureVersion}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>${javaFakerVersion}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gsonVersion}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4jVersion}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4jAPIVersion}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4jVersion}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${seleniumVersion}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testNGVersion}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
