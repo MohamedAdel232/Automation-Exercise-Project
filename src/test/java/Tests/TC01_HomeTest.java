@@ -102,7 +102,7 @@ public class TC01_HomeTest {
     }
 
     @Test
-    public void clickOnDeleteAccountButtonTC() throws IOException {
+    public void clickOnDeleteAccountButtonAfterSignupTC() throws IOException {
         new P01_HomePage(getDriver()).clickOnSignupButton()
                 .enterName(readDataFromJsonFile("signupInformation", "name"))
                 .enterEmail(readDataFromJsonFile("signupInformation", "email"))
@@ -129,6 +129,33 @@ public class TC01_HomeTest {
         LogsUtils.info("User city: " + city);
         LogsUtils.info("User zipcode: " + zipcode);
         LogsUtils.info("User mobileNumber: " + mobileNumber);
+
+        Assert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "DELETED_ACCOUNT_URL")));
+    }
+
+    @Test
+    public void verifyLoggedInAsUsernameTextTC() {
+        new P01_HomePage(getDriver()).clickOnSignupButton()
+                .enterLoginData(readDataFromJsonFile("signupInformation", "email"),
+                        readDataFromJsonFile("signupInformation", "password"))
+                .clickOnLoginButton();
+
+        LogsUtils.info("User email: " + readDataFromJsonFile("signupInformation", "email"));
+        LogsUtils.info("User email: " + readDataFromJsonFile("signupInformation", "password"));
+
+        Assert.assertTrue(new P01_HomePage(getDriver()).checkLoggedInText());
+    }
+
+    @Test
+    public void clickOnDeleteAccountButtonAfterSignInTC() throws IOException {
+        new P01_HomePage(getDriver()).clickOnSignupButton()
+                .enterLoginData(readDataFromJsonFile("signupInformation", "email"),
+                        readDataFromJsonFile("signupInformation", "password"))
+                .clickOnLoginButton()
+                .clickOnDeleteAccountButton();
+
+        LogsUtils.info("User email: " + readDataFromJsonFile("signupInformation", "email"));
+        LogsUtils.info("User password: " + readDataFromJsonFile("signupInformation", "password"));
 
         Assert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "DELETED_ACCOUNT_URL")));
     }

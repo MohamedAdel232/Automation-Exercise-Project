@@ -26,6 +26,8 @@
         <allure-mavenVersion>2.12.0</allure-mavenVersion>
         <allurePluginAPIVersion>2.30.0</allurePluginAPIVersion>
         <suite.RegisterUser>Test Runner/TestCase1_RegisterUser.xml</suite.RegisterUser>
+        <suite.ValidLogin>Test Runner/TestCase2_ValidLogin.xml</suite.ValidLogin>
+
     </properties>
 
     <build>
@@ -59,7 +61,7 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <suiteXmlFiles>
-                        ${suite.RegisterUser}
+                        ${suite.ValidLogin}
                     </suiteXmlFiles>
                 </configuration>
                 <dependencies>

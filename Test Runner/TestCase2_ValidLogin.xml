@@ -9,10 +9,9 @@
         <classes>
             <class name="Tests.TC05_DeletedAccountTest">
                 <methods>
-                    <include name="clickOnContinueDeleteButtonAfterSignupTC"></include>
+                    <include name="clickOnContinueDeleteButtonAfterSignInTC"></include>
                 </methods>
             </class>
-
         </classes>
     </test>
 </suite>

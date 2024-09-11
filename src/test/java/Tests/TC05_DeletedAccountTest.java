@@ -56,7 +56,7 @@ public class TC05_DeletedAccountTest {
     }
 
     @Test
-    public void clickOnContinueDeleteButtonTC() throws IOException {
+    public void clickOnContinueDeleteButtonAfterSignupTC() throws IOException {
         new P01_HomePage(getDriver()).clickOnSignupButton()
                 .enterName(readDataFromJsonFile("signupInformation", "name"))
                 .enterEmail(readDataFromJsonFile("signupInformation", "email"))
@@ -84,6 +84,21 @@ public class TC05_DeletedAccountTest {
         LogsUtils.info("User city: " + city);
         LogsUtils.info("User zipcode: " + zipcode);
         LogsUtils.info("User mobileNumber: " + mobileNumber);
+
+        Assert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "HOME_URL")));
+    }
+
+    @Test
+    public void clickOnContinueDeleteButtonAfterSignInTC() throws IOException {
+        new P01_HomePage(getDriver()).clickOnSignupButton()
+                .enterLoginData(readDataFromJsonFile("signupInformation", "email"),
+                        readDataFromJsonFile("signupInformation", "password"))
+                .clickOnLoginButton()
+                .clickOnDeleteAccountButton()
+                .clickOnContinueDeleteButton();
+
+        LogsUtils.info("User email: " + readDataFromJsonFile("signupInformation", "email"));
+        LogsUtils.info("User password: " + readDataFromJsonFile("signupInformation", "password"));
 
         Assert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "HOME_URL")));
     }

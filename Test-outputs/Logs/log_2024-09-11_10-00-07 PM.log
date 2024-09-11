@@ -1,0 +1,6 @@
+[INFO] 11-09-2024 22:00:07 [main] [Tests.TC01_HomeTest.setup(TC01_HomeTest.java:48)] - chrome is opened
+[INFO] 11-09-2024 22:00:10 [main] [Tests.TC01_HomeTest.setup(TC01_HomeTest.java:52)] - https://automationexercise.com/ website is opened
+[INFO] 11-09-2024 22:00:10 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: clickOnDeleteAccountButtonAfterSignInTC started
+[INFO] 11-09-2024 22:00:15 [main] [Tests.TC01_HomeTest.clickOnDeleteAccountButtonAfterSignInTC(TC01_HomeTest.java:157)] - User email: mohmdadl232@gmail.com
+[INFO] 11-09-2024 22:00:15 [main] [Tests.TC01_HomeTest.clickOnDeleteAccountButtonAfterSignInTC(TC01_HomeTest.java:158)] - User password: 123
+[INFO] 11-09-2024 22:00:15 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: clickOnDeleteAccountButtonAfterSignInTC passed

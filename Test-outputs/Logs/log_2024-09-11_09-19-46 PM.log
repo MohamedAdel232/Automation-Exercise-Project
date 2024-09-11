@@ -1,0 +1,4 @@
+[INFO] 11-09-2024 21:19:46 [main] [Tests.TC02_SignupTest.setup(TC02_SignupTest.java:32)] - chrome is opened
+[INFO] 11-09-2024 21:19:51 [main] [Tests.TC02_SignupTest.setup(TC02_SignupTest.java:36)] - https://automationexercise.com/ website is opened
+[INFO] 11-09-2024 21:19:51 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: verifyLoginTextTC started
+[INFO] 11-09-2024 21:19:53 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: verifyLoginTextTC passed

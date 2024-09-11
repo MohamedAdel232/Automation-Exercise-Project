@@ -48,15 +48,34 @@ public class TC02_SignupTest {
     }
 
     @Test
-    public void enterNameAndAddressTC() throws IOException {
+    public void clickOnSignupButtonTC() throws IOException {
         new P01_HomePage(getDriver()).clickOnSignupButton()
                 .enterName(readDataFromJsonFile("signupInformation", "name"))
                 .enterEmail(readDataFromJsonFile("signupInformation", "email"))
                 .clickSignupButton();
         LogsUtils.info("User name: " + readDataFromJsonFile("signupInformation", "name"));
         LogsUtils.info("User email: " + readDataFromJsonFile("signupInformation", "email"));
-        
+
         Assert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "REGISTER_URL")));
+    }
+
+    @Test
+    public void verifyLoginTextTC() {
+        new P01_HomePage(getDriver()).clickOnSignupButton();
+        Assert.assertTrue(new P02_SignupPage(getDriver()).verifyLoginText());
+    }
+
+    @Test
+    public void clickOnLoginButtonTC() throws IOException {
+        new P01_HomePage(getDriver()).clickOnSignupButton()
+                .enterLoginData(readDataFromJsonFile("signupInformation", "email"),
+                        readDataFromJsonFile("signupInformation", "password"))
+                .clickOnLoginButton();
+
+        LogsUtils.info("User email: " + readDataFromJsonFile("signupInformation", "email"));
+        LogsUtils.info("User password: " + readDataFromJsonFile("signupInformation", "password"));
+
+        Assert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "HOME_URL")));
     }
 
     @AfterMethod

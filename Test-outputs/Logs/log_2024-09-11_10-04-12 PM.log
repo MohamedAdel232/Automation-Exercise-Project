@@ -1,0 +1,16 @@
+[INFO] 11-09-2024 22:04:12 [main] [Tests.TC04_AccountCreatedPage.setup(TC04_AccountCreatedPage.java:45)] - chrome is opened
+[INFO] 11-09-2024 22:04:16 [main] [Tests.TC04_AccountCreatedPage.setup(TC04_AccountCreatedPage.java:49)] - https://automationexercise.com/ website is opened
+[INFO] 11-09-2024 22:04:16 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: clickOnContinueButtonTC started
+[INFO] 11-09-2024 22:04:24 [main] [Tests.TC04_AccountCreatedPage.clickOnContinueButtonTC(TC04_AccountCreatedPage.java:72)] - User name: Mohamed
+[INFO] 11-09-2024 22:04:24 [main] [Tests.TC04_AccountCreatedPage.clickOnContinueButtonTC(TC04_AccountCreatedPage.java:73)] - User email: mohmdadl232@gmail.com
+[INFO] 11-09-2024 22:04:24 [main] [Tests.TC04_AccountCreatedPage.clickOnContinueButtonTC(TC04_AccountCreatedPage.java:74)] - User firstName: Mohamed
+[INFO] 11-09-2024 22:04:24 [main] [Tests.TC04_AccountCreatedPage.clickOnContinueButtonTC(TC04_AccountCreatedPage.java:75)] - User lastName: Saadoun
+[INFO] 11-09-2024 22:04:24 [main] [Tests.TC04_AccountCreatedPage.clickOnContinueButtonTC(TC04_AccountCreatedPage.java:76)] - User company: HTI
+[INFO] 11-09-2024 22:04:24 [main] [Tests.TC04_AccountCreatedPage.clickOnContinueButtonTC(TC04_AccountCreatedPage.java:77)] - User address1: Sayed
+[INFO] 11-09-2024 22:04:24 [main] [Tests.TC04_AccountCreatedPage.clickOnContinueButtonTC(TC04_AccountCreatedPage.java:78)] - User address2: Hilimi
+[INFO] 11-09-2024 22:04:24 [main] [Tests.TC04_AccountCreatedPage.clickOnContinueButtonTC(TC04_AccountCreatedPage.java:79)] - User country: India
+[INFO] 11-09-2024 22:04:24 [main] [Tests.TC04_AccountCreatedPage.clickOnContinueButtonTC(TC04_AccountCreatedPage.java:80)] - User state: Giza
+[INFO] 11-09-2024 22:04:24 [main] [Tests.TC04_AccountCreatedPage.clickOnContinueButtonTC(TC04_AccountCreatedPage.java:81)] - User city: Faisal
+[INFO] 11-09-2024 22:04:24 [main] [Tests.TC04_AccountCreatedPage.clickOnContinueButtonTC(TC04_AccountCreatedPage.java:82)] - User zipcode: 123
+[INFO] 11-09-2024 22:04:24 [main] [Tests.TC04_AccountCreatedPage.clickOnContinueButtonTC(TC04_AccountCreatedPage.java:83)] - User mobileNumber: 01114037589
+[INFO] 11-09-2024 22:04:24 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: clickOnContinueButtonTC passed

@@ -1,0 +1,6 @@
+[INFO] 11-09-2024 21:55:09 [main] [Tests.TC02_SignupTest.setup(TC02_SignupTest.java:32)] - chrome is opened
+[INFO] 11-09-2024 21:55:14 [main] [Tests.TC02_SignupTest.setup(TC02_SignupTest.java:36)] - https://automationexercise.com/ website is opened
+[INFO] 11-09-2024 21:55:15 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: clickOnLoginButtonTC started
+[INFO] 11-09-2024 21:55:22 [main] [Tests.TC02_SignupTest.clickOnLoginButtonTC(TC02_SignupTest.java:75)] - User email: mohmdadl232@gmail.com
+[INFO] 11-09-2024 21:55:22 [main] [Tests.TC02_SignupTest.clickOnLoginButtonTC(TC02_SignupTest.java:76)] - User email: 123
+[INFO] 11-09-2024 21:55:22 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: clickOnLoginButtonTC passed

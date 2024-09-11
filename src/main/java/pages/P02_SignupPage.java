@@ -10,6 +10,10 @@ public class P02_SignupPage {
     private final By nameLocator = By.xpath("//input [@type='text']");
     private final By emailLocator = By.xpath("//input [@data-qa='signup-email']");
     private final By signupButtonLocator = By.xpath("//button [@data-qa='signup-button']");
+    private final By loginToYourAccountLocator = By.xpath("//div [@class='login-form'] //h2 ");
+    private final By loginEmailLocator = By.xpath("// input [@data-qa='login-email']");
+    private final By loginPasswordLocator = By.xpath("// input [@data-qa='login-password']");
+    private final By loginButtonLocator = By.xpath("// button[@data-qa='login-button']");
 
     // Create a web driver
     private final WebDriver driver;
@@ -40,5 +44,23 @@ public class P02_SignupPage {
     public P03_AccountInfoPage clickSignupButton() {
         Utility.clickOnElement(driver, signupButtonLocator);
         return new P03_AccountInfoPage(driver);
+    }
+
+    // Methode to check that log in to your account text in displayed
+    public boolean verifyLoginText() {
+        return driver.findElement(loginToYourAccountLocator).isDisplayed();
+    }
+
+    // Methode to enter log in data
+    public P02_SignupPage enterLoginData(String email, String password) {
+        Utility.sendData(driver, loginEmailLocator, email);
+        Utility.sendData(driver, loginPasswordLocator, password);
+        return this;
+    }
+
+    // Methode to click on login button
+    public P01_HomePage clickOnLoginButton() {
+        Utility.clickOnElement(driver, loginButtonLocator);
+        return new P01_HomePage(driver);
     }
 }

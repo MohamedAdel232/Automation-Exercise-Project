@@ -1,0 +1,16 @@
+[INFO] 11-09-2024 21:58:22 [main] [Tests.TC01_HomeTest.setup(TC01_HomeTest.java:48)] - chrome is opened
+[INFO] 11-09-2024 21:58:26 [main] [Tests.TC01_HomeTest.setup(TC01_HomeTest.java:52)] - https://automationexercise.com/ website is opened
+[INFO] 11-09-2024 21:58:26 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: checkLoggedInTextTC started
+[INFO] 11-09-2024 21:58:35 [main] [Tests.TC01_HomeTest.checkLoggedInTextTC(TC01_HomeTest.java:88)] - User name: Mohamed
+[INFO] 11-09-2024 21:58:35 [main] [Tests.TC01_HomeTest.checkLoggedInTextTC(TC01_HomeTest.java:89)] - User email: mohmdadl232@gmail.com
+[INFO] 11-09-2024 21:58:35 [main] [Tests.TC01_HomeTest.checkLoggedInTextTC(TC01_HomeTest.java:90)] - User firstName: Mohamed
+[INFO] 11-09-2024 21:58:35 [main] [Tests.TC01_HomeTest.checkLoggedInTextTC(TC01_HomeTest.java:91)] - User lastName: Saadoun
+[INFO] 11-09-2024 21:58:35 [main] [Tests.TC01_HomeTest.checkLoggedInTextTC(TC01_HomeTest.java:92)] - User company: HTI
+[INFO] 11-09-2024 21:58:35 [main] [Tests.TC01_HomeTest.checkLoggedInTextTC(TC01_HomeTest.java:93)] - User address1: Sayed
+[INFO] 11-09-2024 21:58:35 [main] [Tests.TC01_HomeTest.checkLoggedInTextTC(TC01_HomeTest.java:94)] - User address2: Hilimi
+[INFO] 11-09-2024 21:58:35 [main] [Tests.TC01_HomeTest.checkLoggedInTextTC(TC01_HomeTest.java:95)] - User country: India
+[INFO] 11-09-2024 21:58:35 [main] [Tests.TC01_HomeTest.checkLoggedInTextTC(TC01_HomeTest.java:96)] - User state: Giza
+[INFO] 11-09-2024 21:58:35 [main] [Tests.TC01_HomeTest.checkLoggedInTextTC(TC01_HomeTest.java:97)] - User city: Faisal
+[INFO] 11-09-2024 21:58:35 [main] [Tests.TC01_HomeTest.checkLoggedInTextTC(TC01_HomeTest.java:98)] - User zipcode: 123
+[INFO] 11-09-2024 21:58:35 [main] [Tests.TC01_HomeTest.checkLoggedInTextTC(TC01_HomeTest.java:99)] - User mobileNumber: 01114037589
+[INFO] 11-09-2024 21:58:35 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: checkLoggedInTextTC passed
