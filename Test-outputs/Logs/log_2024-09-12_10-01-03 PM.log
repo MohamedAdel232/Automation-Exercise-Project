@@ -1,0 +1,4 @@
+[INFO] 12-09-2024 22:01:03 [main] [Tests.TC06_ProductTest.setup(TC06_ProductTest.java:33)] - chrome is opened
+[INFO] 12-09-2024 22:01:07 [main] [Tests.TC06_ProductTest.setup(TC06_ProductTest.java:37)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 22:01:07 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: AddProductMultipleTimesTC started
+[INFO] 12-09-2024 22:01:14 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: AddProductMultipleTimesTC passed

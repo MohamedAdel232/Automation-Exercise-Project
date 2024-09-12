@@ -1,0 +1,12 @@
+[INFO] 12-09-2024 21:35:40 [main] [Tests.TC09_CartTest.setup(P09_CartTest.java:31)] - chrome is opened
+[INFO] 12-09-2024 21:35:44 [main] [Tests.TC09_CartTest.setup(P09_CartTest.java:35)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 21:35:45 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: verifyPriceInfoTC started
+[INFO] 12-09-2024 21:35:49 [main] [pages.P09_CartPage.verifyPriceInfo(P09_CartPage.java:46)] - Price: 500.0
+[INFO] 12-09-2024 21:35:49 [main] [pages.P09_CartPage.verifyPriceInfo(P09_CartPage.java:48)] - Quantity: 1.0
+[INFO] 12-09-2024 21:35:49 [main] [pages.P09_CartPage.verifyPriceInfo(P09_CartPage.java:50)] - Total price: 500.0
+[INFO] 12-09-2024 21:35:49 [main] [pages.P09_CartPage.verifyPriceInfo(P09_CartPage.java:52)] - Calculated total price: 500.0
+[INFO] 12-09-2024 21:35:49 [main] [pages.P09_CartPage.verifyPriceInfo(P09_CartPage.java:46)] - Price: 400.0
+[INFO] 12-09-2024 21:35:49 [main] [pages.P09_CartPage.verifyPriceInfo(P09_CartPage.java:48)] - Quantity: 1.0
+[INFO] 12-09-2024 21:35:49 [main] [pages.P09_CartPage.verifyPriceInfo(P09_CartPage.java:50)] - Total price: 400.0
+[INFO] 12-09-2024 21:35:49 [main] [pages.P09_CartPage.verifyPriceInfo(P09_CartPage.java:52)] - Calculated total price: 400.0
+[INFO] 12-09-2024 21:35:49 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: verifyPriceInfoTC passed

@@ -1,0 +1,4 @@
+[INFO] 12-09-2024 18:58:46 [main] [Tests.TC06_ProductTest.setup(TC06_ProductTest.java:32)] - chrome is opened
+[INFO] 12-09-2024 18:58:50 [main] [Tests.TC06_ProductTest.setup(TC06_ProductTest.java:36)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 18:58:50 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: pressCartButtonTC started
+[INFO] 12-09-2024 18:58:55 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: pressCartButtonTC passed

@@ -1,0 +1,4 @@
+[INFO] 12-09-2024 21:09:21 [main] [Tests.TC09_CartTest.setup(P09_CartTest.java:31)] - chrome is opened
+[INFO] 12-09-2024 21:09:24 [main] [Tests.TC09_CartTest.setup(P09_CartTest.java:35)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 21:09:24 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: verifyPriceInfoTC started
+[INFO] 12-09-2024 21:09:35 [main] [Listeners.iInvokedMethodListener.afterInvocation(iInvokedMethodListener.java:36)] - Test case: verifyPriceInfoTC failed

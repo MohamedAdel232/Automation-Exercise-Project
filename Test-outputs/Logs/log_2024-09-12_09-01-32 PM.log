@@ -1,0 +1,3 @@
+[INFO] 12-09-2024 21:01:32 [main] [Tests.TC09_CartTest.setup(P09_CartTest.java:31)] - chrome is opened
+[INFO] 12-09-2024 21:01:36 [main] [Tests.TC09_CartTest.setup(P09_CartTest.java:35)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 21:01:36 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: addProductsToCartTC started
