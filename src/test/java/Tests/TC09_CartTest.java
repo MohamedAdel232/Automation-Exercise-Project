@@ -56,6 +56,14 @@ public class TC09_CartTest {
         Assert.assertTrue(new P09_CartPage(getDriver()).verifyPriceInfo(readDataFromJsonFile("cartData", "numberOfProducts")));
     }
 
+    @Test
+    public void verifyQuantityNumberTC() {
+        new P01_HomePage(getDriver()).clickOnProductButton()
+                .AddProductMultipleTimes(readDataFromJsonFile("cartData", "numberOfTimes"))
+                .pressCartButton();
+        Assert.assertTrue(new P09_CartPage(getDriver()).verifyQuantityNumber(readDataFromJsonFile("cartData", "numberOfTimes")));
+    }
+
     @AfterMethod
     public void quit() {
         // Quit the browser and delete the driver

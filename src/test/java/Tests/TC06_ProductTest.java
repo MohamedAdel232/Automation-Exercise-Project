@@ -16,8 +16,7 @@ import pages.P06_ProductPage;
 import java.io.IOException;
 import java.time.Duration;
 
-import static DriverFactory.driverFactory.getDriver;
-import static DriverFactory.driverFactory.setupDriver;
+import static DriverFactory.driverFactory.*;
 import static Utilities.DataUtils.readDataFromJsonFile;
 import static Utilities.DataUtils.readDataFromProperties;
 
@@ -86,6 +85,6 @@ public class TC06_ProductTest {
     @AfterMethod
     public void quit() {
         // Quit the browser and delete the driver
-        //quitDriver();
+        quitDriver();
     }
 }

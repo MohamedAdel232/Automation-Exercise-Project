@@ -10,7 +10,8 @@ public class P09_CartPage {
     private final WebDriver driver;
 
     // Page locators
-    
+    By productOneQuantityLocator = By.xpath("// button [@class='disabled'][1]");
+
     // Class construction
     public P09_CartPage(WebDriver driver) {
         this.driver = driver;
@@ -52,6 +53,15 @@ public class P09_CartPage {
             check = realTotalPrice == totalPrice;
         }
         return check;
+    }
+
+    // Methode to verify quantity number
+    public boolean verifyQuantityNumber(String realQuantity) {
+        String quantityFullText = Utility.findWebElement(driver, productOneQuantityLocator).getText();
+        String quantity = quantityFullText.replace("Rs. ", "");
+        LogsUtils.info("Real quantity: " + realQuantity);
+        LogsUtils.info("Quantity: " + quantity);
+        return realQuantity.equals(quantity);
     }
 }
 

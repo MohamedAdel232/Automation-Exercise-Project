@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
+<suite name="Product quantity in cart Suite">
+    <listeners>
+        <listener class-name="Listeners.iInvokedMethodListener"></listener>
+        <listener class-name="Listeners.iTestResultListener"></listener>
+    </listeners>
+
+    <test name="Product quantity in cart Test">
+        <classes>
+            <class name="Tests.TC09_CartTest">
+                <methods>
+                    <include name="verifyQuantityNumberTC"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
