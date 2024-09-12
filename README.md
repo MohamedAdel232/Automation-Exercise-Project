@@ -73,3 +73,13 @@ Page Object Model (POM): Design pattern implemented to make the test code more m
 7. Click on 'View Product' of first product
 8. User is landed to product detail page
 9. Verify that detail detail is visible: product name, category, price, availability, condition, brand
+
+### Test Case 9: Search Product
+1. Launch browser
+2. Navigate to url 'http://automationexercise.com'
+3. Verify that home page is visible successfully
+4. Click on 'Products' button
+5. Verify user is navigated to ALL PRODUCTS page successfully
+6. Enter product name in search input and click search button
+7. Verify 'SEARCHED PRODUCTS' is visible
+8. Verify all the products related to search are visible
