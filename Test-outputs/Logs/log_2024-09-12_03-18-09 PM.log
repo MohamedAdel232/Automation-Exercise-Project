@@ -1,0 +1,4 @@
+[INFO] 12-09-2024 15:18:09 [main] [Tests.TC04_AccountCreatedPage.setup(TC04_AccountCreatedPage.java:45)] - chrome is opened
+[INFO] 12-09-2024 15:18:13 [main] [Tests.TC04_AccountCreatedPage.setup(TC04_AccountCreatedPage.java:49)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 15:18:13 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: clickOnContinueButtonTC started
+[INFO] 12-09-2024 15:18:21 [main] [Listeners.iInvokedMethodListener.afterInvocation(iInvokedMethodListener.java:36)] - Test case: clickOnContinueButtonTC failed

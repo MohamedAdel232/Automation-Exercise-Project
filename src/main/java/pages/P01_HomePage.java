@@ -10,8 +10,8 @@ public class P01_HomePage {
     // Page locators
     private final By signupButtonLocator = By.xpath("//*[@href='/login']");
     private final By loggedInLocator = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[10]/a");
-    private final By deleteAccountButton = By.cssSelector("[href='/delete_account']");
-
+    private final By deleteAccountButtonLocator = By.cssSelector("[href='/delete_account']");
+    private final By logOutButtonLocator = By.xpath("//div [@class='shop-menu pull-right'] //ul[1]//li[4]//a[1]");
     // Create a web driver
     private final WebDriver driver;
 
@@ -38,7 +38,13 @@ public class P01_HomePage {
 
     // Methode to click on delete account button
     public P05_DeletedAccountPage clickOnDeleteAccountButton() {
-        Utility.clickOnElement(driver, deleteAccountButton);
+        Utility.clickOnElement(driver, deleteAccountButtonLocator);
         return new P05_DeletedAccountPage(driver);
+    }
+
+    // Methode to click on logout button
+    public P02_SignupPage clickOnLogoutButton() {
+        Utility.clickOnElement(driver, logOutButtonLocator);
+        return new P02_SignupPage(driver);
     }
 }

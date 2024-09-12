@@ -1,0 +1,6 @@
+[INFO] 12-09-2024 15:01:41 [main] [Tests.TC01_HomeTest.setup(TC01_HomeTest.java:48)] - chrome is opened
+[INFO] 12-09-2024 15:01:43 [main] [Tests.TC01_HomeTest.setup(TC01_HomeTest.java:52)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 15:01:44 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: verifyLoggedInAsUsernameTextTC started
+[INFO] 12-09-2024 15:01:48 [main] [Tests.TC01_HomeTest.verifyLoggedInAsUsernameTextTC(TC01_HomeTest.java:143)] - User email: mohmdadl232@gmail.com
+[INFO] 12-09-2024 15:01:48 [main] [Tests.TC01_HomeTest.verifyLoggedInAsUsernameTextTC(TC01_HomeTest.java:144)] - User email: 123
+[INFO] 12-09-2024 15:01:48 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: verifyLoggedInAsUsernameTextTC passed

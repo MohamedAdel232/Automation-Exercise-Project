@@ -1,0 +1,6 @@
+[INFO] 12-09-2024 15:26:42 [main] [Tests.TC01_HomeTest.setup(TC01_HomeTest.java:48)] - chrome is opened
+[INFO] 12-09-2024 15:26:45 [main] [Tests.TC01_HomeTest.setup(TC01_HomeTest.java:52)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 15:26:45 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: LogOutTC started
+[INFO] 12-09-2024 15:26:50 [main] [Tests.TC01_HomeTest.LogOutTC(TC01_HomeTest.java:170)] - User email: mohmdadl232@gmail.com
+[INFO] 12-09-2024 15:26:50 [main] [Tests.TC01_HomeTest.LogOutTC(TC01_HomeTest.java:171)] - User email: 123
+[INFO] 12-09-2024 15:26:50 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: LogOutTC passed

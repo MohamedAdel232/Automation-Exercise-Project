@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
-<suite name="Register User Suite">
+<suite name="Invalid login Suite">
     <listeners>
         <listener class-name="Listeners.iInvokedMethodListener"></listener>
         <listener class-name="Listeners.iTestResultListener"></listener>
     </listeners>
 
-    <test name="Register User Test">
+    <test name="Invalid login Test">
         <classes>
             <class name="Tests.TC02_SignupTest">
                 <methods>

@@ -28,7 +28,9 @@
         <suite.RegisterUser>Test Runner/TestCase1_RegisterUser.xml</suite.RegisterUser>
         <suite.ValidLogin>Test Runner/TestCase2_ValidLogin.xml</suite.ValidLogin>
         <suite.InValidLogin>Test Runner/TestCase3_InValidLogin.xml</suite.InValidLogin>
-
+        <suite.Signup>Test Runner/Signup.xml</suite.Signup>
+        <suite.Login>Test Runner/Login.xml</suite.Login>
+        <suite.Logout>Test Runner/TesCase4_LogoutUser.xml</suite.Logout>
 
     </properties>
 
@@ -63,7 +65,7 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <suiteXmlFiles>
-                        ${suite.InValidLogin}
+                        ${suite.Logout}
                     </suiteXmlFiles>
                 </configuration>
                 <dependencies>

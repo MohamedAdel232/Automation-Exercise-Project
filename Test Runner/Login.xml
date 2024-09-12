@@ -1,17 +1,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
-<suite name="Valid Login Suite">
+<suite name="Login Suite">
     <listeners>
         <listener class-name="Listeners.iInvokedMethodListener"></listener>
         <listener class-name="Listeners.iTestResultListener"></listener>
     </listeners>
 
-    <test name="Valid Login Test">
+    <test name="Login Test">
         <classes>
-            <class name="Tests.TC05_DeletedAccountTest">
+            <class name="Tests.TC01_HomeTest">
                 <methods>
-                    <include name="clickOnContinueDeleteButtonAfterSignInTC"></include>
+                    <include name="verifyLoggedInAsUsernameTextTC"></include>
                 </methods>
             </class>
+
         </classes>
     </test>
 </suite>

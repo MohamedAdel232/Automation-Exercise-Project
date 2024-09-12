@@ -160,6 +160,19 @@ public class TC01_HomeTest {
         Assert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "DELETED_ACCOUNT_URL")));
     }
 
+    @Test
+    public void LogOutTC() throws IOException {
+        new P01_HomePage(getDriver()).clickOnSignupButton()
+                .enterValidLoginData(readDataFromJsonFile("signupInformation", "email"),
+                        readDataFromJsonFile("signupInformation", "password"))
+                .clickOnLoginButton().clickOnLogoutButton();
+
+        LogsUtils.info("User email: " + readDataFromJsonFile("signupInformation", "email"));
+        LogsUtils.info("User email: " + readDataFromJsonFile("signupInformation", "password"));
+
+        Assert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "LOGIN_URL")));
+    }
+
     @AfterMethod
     public void quit() {
         // Quit the browser and delete the driver
