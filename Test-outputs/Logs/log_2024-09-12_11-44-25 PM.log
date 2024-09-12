@@ -1,0 +1,17 @@
+[INFO] 12-09-2024 23:44:25 [main] [Tests.TC11_PaymentTest.setup(TC11_PaymentTest.java:32)] - chrome is opened
+[INFO] 12-09-2024 23:44:28 [main] [Tests.TC11_PaymentTest.setup(TC11_PaymentTest.java:36)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 23:44:29 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: fillPaymentDataAndConfirmTC started
+[INFO] 12-09-2024 23:44:30 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:47)] - Login page URL: https://automationexercise.com/login
+[INFO] 12-09-2024 23:44:33 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:53)] - User email: mohmdadl232@gmail.com
+[INFO] 12-09-2024 23:44:33 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:54)] - User password: 123
+[INFO] 12-09-2024 23:44:35 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:59)] - Product page URL: https://automationexercise.com/products
+[INFO] 12-09-2024 23:44:37 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:65)] - Product page URL: null
+[INFO] 12-09-2024 23:44:38 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:69)] - Checkout page URL: https://automationexercise.com/checkout
+[INFO] 12-09-2024 23:44:40 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:74)] - Comment: confirm
+[INFO] 12-09-2024 23:44:43 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:84)] - Name: Mohamed
+[INFO] 12-09-2024 23:44:43 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:85)] - Card number: 123
+[INFO] 12-09-2024 23:44:43 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:86)] - cvc: 123
+[INFO] 12-09-2024 23:44:43 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:87)] - Month expiration: 12
+[INFO] 12-09-2024 23:44:43 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:88)] - Year expiration: 2025
+[INFO] 12-09-2024 23:44:43 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:89)] - Order Placed page URL: https://automationexercise.com/payment_done/0
+[INFO] 12-09-2024 23:44:48 [main] [Listeners.iInvokedMethodListener.afterInvocation(iInvokedMethodListener.java:36)] - Test case: fillPaymentDataAndConfirmTC failed

@@ -1,0 +1,18 @@
+[INFO] 12-09-2024 23:56:29 [main] [Tests.TC12_OrderPlaced.setup(TC12_OrderPlaced.java:32)] - chrome is opened
+[INFO] 12-09-2024 23:56:35 [main] [Tests.TC12_OrderPlaced.setup(TC12_OrderPlaced.java:36)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 23:56:35 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: checkConfirmationMessageTC started
+[INFO] 12-09-2024 23:56:37 [main] [Tests.TC12_OrderPlaced.checkConfirmationMessageTC(TC12_OrderPlaced.java:47)] - Login page URL: https://automationexercise.com/login
+[INFO] 12-09-2024 23:56:40 [main] [Tests.TC12_OrderPlaced.checkConfirmationMessageTC(TC12_OrderPlaced.java:53)] - User email: mohmdadl232@gmail.com
+[INFO] 12-09-2024 23:56:40 [main] [Tests.TC12_OrderPlaced.checkConfirmationMessageTC(TC12_OrderPlaced.java:54)] - User password: 123
+[INFO] 12-09-2024 23:56:42 [main] [Tests.TC12_OrderPlaced.checkConfirmationMessageTC(TC12_OrderPlaced.java:59)] - Product page URL: https://automationexercise.com/products
+[INFO] 12-09-2024 23:56:44 [main] [Tests.TC12_OrderPlaced.checkConfirmationMessageTC(TC12_OrderPlaced.java:65)] - Product page URL: null
+[INFO] 12-09-2024 23:56:45 [main] [Tests.TC12_OrderPlaced.checkConfirmationMessageTC(TC12_OrderPlaced.java:69)] - Checkout page URL: https://automationexercise.com/checkout
+[INFO] 12-09-2024 23:56:47 [main] [Tests.TC12_OrderPlaced.checkConfirmationMessageTC(TC12_OrderPlaced.java:74)] - Comment: confirm
+[INFO] 12-09-2024 23:56:53 [main] [Tests.TC12_OrderPlaced.checkConfirmationMessageTC(TC12_OrderPlaced.java:84)] - Name: Mohamed
+[INFO] 12-09-2024 23:56:53 [main] [Tests.TC12_OrderPlaced.checkConfirmationMessageTC(TC12_OrderPlaced.java:85)] - Card number: 123
+[INFO] 12-09-2024 23:56:53 [main] [Tests.TC12_OrderPlaced.checkConfirmationMessageTC(TC12_OrderPlaced.java:86)] - cvc: 123
+[INFO] 12-09-2024 23:56:53 [main] [Tests.TC12_OrderPlaced.checkConfirmationMessageTC(TC12_OrderPlaced.java:87)] - Month expiration: 12
+[INFO] 12-09-2024 23:56:53 [main] [Tests.TC12_OrderPlaced.checkConfirmationMessageTC(TC12_OrderPlaced.java:88)] - Year expiration: 2025
+[INFO] 12-09-2024 23:56:53 [main] [Tests.TC12_OrderPlaced.checkConfirmationMessageTC(TC12_OrderPlaced.java:89)] - Order Placed page URL: https://automationexercise.com/payment_done/0
+[INFO] 12-09-2024 23:56:53 [main] [Tests.TC12_OrderPlaced.checkConfirmationMessageTC(TC12_OrderPlaced.java:90)] - https://automationexercise.com/payment_done/900
+[INFO] 12-09-2024 23:56:53 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: checkConfirmationMessageTC passed

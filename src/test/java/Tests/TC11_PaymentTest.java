@@ -5,16 +5,12 @@ import Listeners.iTestResultListener;
 import Utilities.LogsUtils;
 import Utilities.Utility;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import pages.P01_HomePage;
-import pages.P02_SignupPage;
-import pages.P06_ProductPage;
-import pages.P09_CartPage;
+import pages.*;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -24,7 +20,7 @@ import static Utilities.DataUtils.readDataFromJsonFile;
 import static Utilities.DataUtils.readDataFromProperties;
 
 @Listeners({iTestResultListener.class, iInvokedMethodListener.class})
-public class TC09_CartTest {
+public class TC11_PaymentTest {
 
     SoftAssert softAssert = new SoftAssert();
     private WebDriver driver;
@@ -46,31 +42,7 @@ public class TC09_CartTest {
     }
 
     @Test
-    public void addProductsToCartTC() {
-        new P01_HomePage(getDriver()).clickOnProductButton()
-                .AddProductsToCart(readDataFromJsonFile("cartData", "numberOfProducts"))
-                .pressCartButton();
-        Assert.assertTrue(new P09_CartPage(getDriver()).verifyNumberOfProducts(readDataFromJsonFile("cartData", "numberOfProducts")));
-    }
-
-    @Test
-    public void verifyPriceInfoTC() {
-        new P01_HomePage(getDriver()).clickOnProductButton()
-                .AddProductsToCart(readDataFromJsonFile("cartData", "numberOfProducts"))
-                .pressCartButton();
-        Assert.assertTrue(new P09_CartPage(getDriver()).verifyPriceInfo(readDataFromJsonFile("cartData", "numberOfProducts")));
-    }
-
-    @Test
-    public void verifyQuantityNumberTC() {
-        new P01_HomePage(getDriver()).clickOnProductButton()
-                .AddProductMultipleTimes(readDataFromJsonFile("cartData", "numberOfTimes"))
-                .pressCartButton();
-        Assert.assertTrue(new P09_CartPage(getDriver()).verifyQuantityNumber(readDataFromJsonFile("cartData", "numberOfTimes")));
-    }
-
-    @Test
-    public void proceedToCheckoutTC() throws IOException {
+    public void fillPaymentDataAndConfirmTC() throws IOException {
         new P01_HomePage(getDriver()).clickOnSignupButton();
         LogsUtils.info("Login page URL: " + readDataFromProperties("environments", "LOGIN_URL"));
         softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "LOGIN_URL")));
@@ -94,10 +66,29 @@ public class TC09_CartTest {
         softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "VIEW_CART_URL")));
 
         new P09_CartPage(getDriver()).proceedToCheckout();
-        LogsUtils.info("Product page URL: " + readDataFromProperties("environments", "CHECKOUT_URL"));
-
+        LogsUtils.info("Checkout page URL: " + readDataFromProperties("environments", "CHECKOUT_URL"));
         softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "CHECKOUT_URL")));
 
+        new P10_AddressDetailsPage(getDriver())
+                .enterCommentAndPlaceOrder(readDataFromJsonFile("checkOut", "comment"));
+        LogsUtils.info("Comment: " + readDataFromJsonFile("checkOut", "comment"));
+        softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "PAYMENT_URL")));
+
+        new P11_PaymentPage(getDriver()).fillPaymentDataAndConfirm(
+                readDataFromJsonFile("payment", "name"),
+                readDataFromJsonFile("payment", "cardNumber"),
+                readDataFromJsonFile("payment", "cvc"),
+                readDataFromJsonFile("payment", "monthExpiration"),
+                readDataFromJsonFile("payment", "yearExpiration"));
+
+        LogsUtils.info("Name: " + readDataFromJsonFile("payment", "name"));
+        LogsUtils.info("Card number: " + readDataFromJsonFile("payment", "cardNumber"));
+        LogsUtils.info("cvc: " + readDataFromJsonFile("payment", "cvc"));
+        LogsUtils.info("Month expiration: " + readDataFromJsonFile("payment", "monthExpiration"));
+        LogsUtils.info("Year expiration: " + readDataFromJsonFile("payment", "yearExpiration"));
+        LogsUtils.info("Order Placed page URL: " + readDataFromProperties("environments", "ORDER_PLACED_URL"));
+        LogsUtils.info(getDriver().getCurrentUrl());
+        
         softAssert.assertAll();
     }
 

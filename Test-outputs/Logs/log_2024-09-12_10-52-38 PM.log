@@ -1,0 +1,10 @@
+[INFO] 12-09-2024 22:52:38 [main] [Tests.TC09_CartTest.setup(TC09_CartTest.java:36)] - chrome is opened
+[INFO] 12-09-2024 22:52:42 [main] [Tests.TC09_CartTest.setup(TC09_CartTest.java:40)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 22:52:43 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: P10_AddressDetailsPageTC started
+[INFO] 12-09-2024 22:52:44 [main] [Tests.TC09_CartTest.P10_AddressDetailsPageTC(TC09_CartTest.java:75)] - Login page URL: https://automationexercise.com/login
+[INFO] 12-09-2024 22:52:51 [main] [Tests.TC09_CartTest.P10_AddressDetailsPageTC(TC09_CartTest.java:81)] - User email: mohmdadl232@gmail.com
+[INFO] 12-09-2024 22:52:51 [main] [Tests.TC09_CartTest.P10_AddressDetailsPageTC(TC09_CartTest.java:82)] - User password: 123
+[INFO] 12-09-2024 22:52:54 [main] [Tests.TC09_CartTest.P10_AddressDetailsPageTC(TC09_CartTest.java:87)] - Product page URL: https://automationexercise.com/products
+[INFO] 12-09-2024 22:52:58 [main] [Tests.TC09_CartTest.P10_AddressDetailsPageTC(TC09_CartTest.java:93)] - Product page URL: null
+[INFO] 12-09-2024 22:53:02 [main] [Tests.TC09_CartTest.P10_AddressDetailsPageTC(TC09_CartTest.java:97)] - Product page URL: https://automationexercise.com/checkout
+[INFO] 12-09-2024 22:53:02 [main] [Listeners.iInvokedMethodListener.afterInvocation(iInvokedMethodListener.java:36)] - Test case: P10_AddressDetailsPageTC failed

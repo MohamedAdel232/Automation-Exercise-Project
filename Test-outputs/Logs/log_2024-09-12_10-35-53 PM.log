@@ -1,0 +1,5 @@
+[INFO] 12-09-2024 22:35:53 [main] [Tests.TC09_CartTest.setup(TC09_CartTest.java:32)] - chrome is opened
+[INFO] 12-09-2024 22:35:57 [main] [Tests.TC09_CartTest.setup(TC09_CartTest.java:36)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 22:35:57 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: P10_AddressDetailsPageTC started
+[INFO] 12-09-2024 22:36:05 [main] [Tests.TC09_CartTest.P10_AddressDetailsPageTC(TC09_CartTest.java:74)] - https://automationexercise.com/checkout website is opened
+[INFO] 12-09-2024 22:36:10 [main] [Listeners.iInvokedMethodListener.afterInvocation(iInvokedMethodListener.java:36)] - Test case: P10_AddressDetailsPageTC failed

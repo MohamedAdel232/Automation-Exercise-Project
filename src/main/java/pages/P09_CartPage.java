@@ -6,11 +6,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class P09_CartPage {
+    // Page locators
+    public final By productOneQuantityLocator = By.xpath("// button [@class='disabled'][1]");
+    public final By proceedToCheckoutButtonLocator = By.xpath("// a [contains(@class,'check_out')]");
     // Create a web driver
     private final WebDriver driver;
-
-    // Page locators
-    By productOneQuantityLocator = By.xpath("// button [@class='disabled'][1]");
 
     // Class construction
     public P09_CartPage(WebDriver driver) {
@@ -62,6 +62,12 @@ public class P09_CartPage {
         LogsUtils.info("Real quantity: " + realQuantity);
         LogsUtils.info("Quantity: " + quantity);
         return realQuantity.equals(quantity);
+    }
+
+    // Methode to proceed to checkout
+    public P10_AddressDetailsPage proceedToCheckout() {
+        Utility.clickOnElement(driver, proceedToCheckoutButtonLocator);
+        return new P10_AddressDetailsPage(driver);
     }
 }
 

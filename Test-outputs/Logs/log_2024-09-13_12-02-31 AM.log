@@ -1,0 +1,8 @@
+[INFO] 13-09-2024 00:02:31 [main] [Tests.TC12_OrderPlaced.setup(TC12_OrderPlaced.java:32)] - chrome is opened
+[INFO] 13-09-2024 00:02:35 [main] [Tests.TC12_OrderPlaced.setup(TC12_OrderPlaced.java:36)] - https://automationexercise.com/ website is opened
+[INFO] 13-09-2024 00:02:35 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: finishTheOrder started
+[INFO] 13-09-2024 00:02:37 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:99)] - Login page URL: https://automationexercise.com/login
+[INFO] 13-09-2024 00:02:39 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:105)] - User email: mohmdadl232@gmail.com
+[INFO] 13-09-2024 00:02:39 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:106)] - User password: 123
+[INFO] 13-09-2024 00:02:42 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:111)] - Product page URL: https://automationexercise.com/products
+[INFO] 13-09-2024 00:02:43 [main] [Listeners.iInvokedMethodListener.afterInvocation(iInvokedMethodListener.java:36)] - Test case: finishTheOrder failed

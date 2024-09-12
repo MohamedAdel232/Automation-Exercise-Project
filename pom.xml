@@ -36,6 +36,8 @@
         <suite.AddProductInCart>Test Runner/TestCase12_AddProductsInCart.xml</suite.AddProductInCart>
         <suite.VerifyProductQuantity>Test Runner/TestCase13_VerifyProductQuantityInCart.xml
         </suite.VerifyProductQuantity>
+        <suite.FinishOrder>Test Runner/TestCase16_PlaceOrder.xml</suite.FinishOrder>
+
 
     </properties>
 
@@ -70,7 +72,7 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <suiteXmlFiles>
-                        ${suite.VerifyProductQuantity}
+                        ${suite.FinishOrder}
                     </suiteXmlFiles>
                 </configuration>
                 <dependencies>

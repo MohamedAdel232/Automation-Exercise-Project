@@ -1,0 +1,19 @@
+[INFO] 13-09-2024 00:05:27 [main] [Tests.TC12_OrderPlaced.setup(TC12_OrderPlaced.java:32)] - chrome is opened
+[INFO] 13-09-2024 00:05:35 [main] [Tests.TC12_OrderPlaced.setup(TC12_OrderPlaced.java:36)] - https://automationexercise.com/ website is opened
+[INFO] 13-09-2024 00:05:35 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: finishTheOrder started
+[INFO] 13-09-2024 00:05:37 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:99)] - Login page URL: https://automationexercise.com/login
+[INFO] 13-09-2024 00:05:41 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:105)] - User email: mohmdadl232@gmail.com
+[INFO] 13-09-2024 00:05:41 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:106)] - User password: 123
+[INFO] 13-09-2024 00:05:44 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:111)] - Product page URL: https://automationexercise.com/products
+[INFO] 13-09-2024 00:05:47 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:117)] - Product page URL: null
+[INFO] 13-09-2024 00:05:49 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:121)] - Checkout page URL: https://automationexercise.com/checkout
+[INFO] 13-09-2024 00:05:51 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:126)] - Comment: confirm
+[INFO] 13-09-2024 00:05:54 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:136)] - Name: Mohamed
+[INFO] 13-09-2024 00:05:54 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:137)] - Card number: 123
+[INFO] 13-09-2024 00:05:54 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:138)] - cvc: 123
+[INFO] 13-09-2024 00:05:54 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:139)] - Month expiration: 12
+[INFO] 13-09-2024 00:05:54 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:140)] - Year expiration: 2025
+[INFO] 13-09-2024 00:05:54 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:141)] - Order Placed page URL: https://automationexercise.com/payment_done/0
+[INFO] 13-09-2024 00:05:54 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:142)] - https://automationexercise.com/payment_done/900
+[INFO] 13-09-2024 00:05:59 [main] [Tests.TC12_OrderPlaced.finishTheOrder(TC12_OrderPlaced.java:145)] - Home URL: https://automationexercise.com/
+[INFO] 13-09-2024 00:05:59 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: finishTheOrder passed

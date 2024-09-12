@@ -1,0 +1,11 @@
+[INFO] 12-09-2024 23:15:04 [main] [Tests.TC10_AddressDetails.setup(TC10_AddressDetails.java:32)] - chrome is opened
+[INFO] 12-09-2024 23:15:07 [main] [Tests.TC10_AddressDetails.setup(TC10_AddressDetails.java:36)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 23:15:08 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: enterCommentAndPlaceOrder started
+[INFO] 12-09-2024 23:15:09 [main] [Tests.TC10_AddressDetails.enterCommentAndPlaceOrder(TC10_AddressDetails.java:80)] - Login page URL: https://automationexercise.com/login
+[INFO] 12-09-2024 23:15:12 [main] [Tests.TC10_AddressDetails.enterCommentAndPlaceOrder(TC10_AddressDetails.java:86)] - User email: mohmdadl232@gmail.com
+[INFO] 12-09-2024 23:15:12 [main] [Tests.TC10_AddressDetails.enterCommentAndPlaceOrder(TC10_AddressDetails.java:87)] - User password: 123
+[INFO] 12-09-2024 23:15:13 [main] [Tests.TC10_AddressDetails.enterCommentAndPlaceOrder(TC10_AddressDetails.java:92)] - Product page URL: https://automationexercise.com/products
+[INFO] 12-09-2024 23:15:16 [main] [Tests.TC10_AddressDetails.enterCommentAndPlaceOrder(TC10_AddressDetails.java:98)] - Product page URL: null
+[INFO] 12-09-2024 23:15:17 [main] [Tests.TC10_AddressDetails.enterCommentAndPlaceOrder(TC10_AddressDetails.java:102)] - Product page URL: https://automationexercise.com/checkout
+[INFO] 12-09-2024 23:15:19 [main] [Tests.TC10_AddressDetails.enterCommentAndPlaceOrder(TC10_AddressDetails.java:108)] - Comment: confirm
+[INFO] 12-09-2024 23:15:19 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: enterCommentAndPlaceOrder passed

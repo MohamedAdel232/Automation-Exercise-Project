@@ -1,0 +1,17 @@
+[INFO] 12-09-2024 23:34:59 [main] [Tests.TC11_PaymentTest.setup(TC11_PaymentTest.java:32)] - chrome is opened
+[INFO] 12-09-2024 23:35:06 [main] [Tests.TC11_PaymentTest.setup(TC11_PaymentTest.java:36)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 23:35:06 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: fillPaymentDataAndConfirmTC started
+[INFO] 12-09-2024 23:35:08 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:47)] - Login page URL: https://automationexercise.com/login
+[INFO] 12-09-2024 23:35:16 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:53)] - User email: mohmdadl232@gmail.com
+[INFO] 12-09-2024 23:35:16 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:54)] - User password: 123
+[INFO] 12-09-2024 23:36:18 [main] [Tests.TC11_PaymentTest.fillPaymentDataAndConfirmTC(TC11_PaymentTest.java:59)] - Product page URL: https://automationexercise.com/products
+[INFO] 12-09-2024 23:36:28 [main] [Listeners.iInvokedMethodListener.afterInvocation(iInvokedMethodListener.java:36)] - Test case: fillPaymentDataAndConfirmTC failed
+[ERROR] 12-09-2024 23:36:28 [main] [Utilities.Utility.takeScreenshoot(Utility.java:71)] - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.137)
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b0d1e9e3d2df89cceaac12c12b590c4d, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62474}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62474/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b0d1e9e3d2df89cceaac12c12b590c4d
