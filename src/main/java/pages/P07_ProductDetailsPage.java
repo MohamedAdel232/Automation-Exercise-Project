@@ -13,7 +13,6 @@ public class P07_ProductDetailsPage {
     private final By productConditionLocator = By.xpath("//p //b [text()='Condition:']");
     private final By productBrandLocator = By.xpath("//p //b [text()='Brand:']");
 
-
     // Create a web driver
     private final WebDriver driver;
 
@@ -31,4 +30,5 @@ public class P07_ProductDetailsPage {
                 && Utility.findWebElement(driver, productConditionLocator).isDisplayed()
                 && Utility.findWebElement(driver, productBrandLocator).isDisplayed();
     }
+
 }

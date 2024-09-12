@@ -32,6 +32,7 @@
         <suite.Login>Test Runner/Login.xml</suite.Login>
         <suite.Logout>Test Runner/TesCase4_LogoutUser.xml</suite.Logout>
         <suite.ProductDetails>Test Runner/Test_Case8_VerifyProductsDetails.xml</suite.ProductDetails>
+        <suite.SearchResults>Test Runner/TestCase9_SearchProduct.xml</suite.SearchResults>
 
     </properties>
 
@@ -66,7 +67,7 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <suiteXmlFiles>
-                        ${suite.ProductDetails}
+                        ${suite.SearchResults}
                     </suiteXmlFiles>
                 </configuration>
                 <dependencies>

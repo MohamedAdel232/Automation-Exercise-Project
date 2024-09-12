@@ -1,0 +1,4 @@
+[INFO] 12-09-2024 17:43:03 [main] [Tests.TC06_ProductTest.setup(TC06_ProductTest.java:32)] - chrome is opened
+[INFO] 12-09-2024 17:43:06 [main] [Tests.TC06_ProductTest.setup(TC06_ProductTest.java:36)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 17:43:07 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: searchForItemTC started
+[INFO] 12-09-2024 17:43:12 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: searchForItemTC passed

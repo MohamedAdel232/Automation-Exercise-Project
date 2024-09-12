@@ -1,0 +1,6 @@
+[INFO] 12-09-2024 17:54:55 [main] [Tests.TC08_SearchResultsTest.setup(TC08_SearchResultsTest.java:31)] - chrome is opened
+[INFO] 12-09-2024 17:54:58 [main] [Tests.TC08_SearchResultsTest.setup(TC08_SearchResultsTest.java:35)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 17:54:59 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: verifyVisibilityOfSearchedProductsTextTC started
+[INFO] 12-09-2024 17:55:03 [main] [Tests.TC08_SearchResultsTest.verifyVisibilityOfSearchedProductsTextTC(TC08_SearchResultsTest.java:48)] - Product: dress
+[INFO] 12-09-2024 17:55:03 [main] [Tests.TC08_SearchResultsTest.verifyVisibilityOfSearchedProductsTextTC(TC08_SearchResultsTest.java:49)] - Product URL: https://automationexercise.com/products?search=dress
+[INFO] 12-09-2024 17:55:03 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: verifyVisibilityOfSearchedProductsTextTC passed
