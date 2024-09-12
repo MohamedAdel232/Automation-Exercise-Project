@@ -83,3 +83,26 @@ Page Object Model (POM): Design pattern implemented to make the test code more m
 6. Enter product name in search input and click search button
 7. Verify 'SEARCHED PRODUCTS' is visible
 8. Verify all the products related to search are visible
+
+### Test Case 12: Add Products in Cart
+1. Launch browser
+2. Navigate to url 'http://automationexercise.com'
+3. Verify that home page is visible successfully
+4. Click 'Products' button
+5. Hover over first product and click 'Add to cart'
+6. Click 'Continue Shopping' button
+7. Hover over second product and click 'Add to cart'
+8. Click 'View Cart' button
+9. Verify both products are added to Cart
+10. Verify their prices, quantity and total price
+
+### Test Case 13: Verify Product quantity in Cart
+1. Launch browser
+2. Navigate to url 'http://automationexercise.com'
+3. Verify that home page is visible successfully
+4. Click 'View Product' for any product on home page
+5. Verify product detail is opened
+6. Increase quantity to 4
+7. Click 'Add to cart' button
+8. Click 'View Cart' button
+9. Verify that product is displayed in cart page with exact quantity
