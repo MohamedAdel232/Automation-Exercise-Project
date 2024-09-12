@@ -1,0 +1,4 @@
+[INFO] 12-09-2024 17:10:39 [main] [Tests.TC07_ProductDetailsTest.setup(TC07_ProductDetailsTest.java:30)] - chrome is opened
+[INFO] 12-09-2024 17:10:42 [main] [Tests.TC07_ProductDetailsTest.setup(TC07_ProductDetailsTest.java:34)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 17:10:43 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: checkingVisibilityOfProductInfoTC started
+[INFO] 12-09-2024 17:10:47 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: checkingVisibilityOfProductInfoTC passed

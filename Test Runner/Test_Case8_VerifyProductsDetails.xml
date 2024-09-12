@@ -1,15 +1,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
-<suite name="Logout User Suite">
+<suite name="Verify products Suite">
     <listeners>
         <listener class-name="Listeners.iInvokedMethodListener"></listener>
         <listener class-name="Listeners.iTestResultListener"></listener>
     </listeners>
 
-    <test name="Logout User Test">
+    <test name="Verify products Test">
         <classes>
-            <class name="Tests.TC01_HomeTest">
+            <class name="Tests.TC07_ProductDetailsTest">
                 <methods>
-                    <include name="logOutTC"></include>
+                    <include name="checkingVisibilityOfProductInfoTC"></include>
                 </methods>
             </class>
         </classes>

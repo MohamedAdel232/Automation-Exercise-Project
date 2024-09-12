@@ -1,0 +1,4 @@
+[INFO] 12-09-2024 15:44:50 [main] [Tests.TC01_HomeTest.setup(TC01_HomeTest.java:48)] - chrome is opened
+[INFO] 12-09-2024 15:44:54 [main] [Tests.TC01_HomeTest.setup(TC01_HomeTest.java:52)] - https://automationexercise.com/ website is opened
+[INFO] 12-09-2024 15:44:54 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: clickOnProducButtonTC started
+[INFO] 12-09-2024 15:44:56 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: clickOnProducButtonTC passed

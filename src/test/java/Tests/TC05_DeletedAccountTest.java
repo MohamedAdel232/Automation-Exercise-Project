@@ -20,7 +20,6 @@ import static Utilities.DataUtils.readDataFromJsonFile;
 import static Utilities.DataUtils.readDataFromProperties;
 
 @Listeners({iTestResultListener.class, iInvokedMethodListener.class})
-
 public class TC05_DeletedAccountTest {
 
     private static final String password = readDataFromJsonFile("signupInformation", "password");

@@ -161,7 +161,7 @@ public class TC01_HomeTest {
     }
 
     @Test
-    public void LogOutTC() throws IOException {
+    public void logOutTC() throws IOException {
         new P01_HomePage(getDriver()).clickOnSignupButton()
                 .enterValidLoginData(readDataFromJsonFile("signupInformation", "email"),
                         readDataFromJsonFile("signupInformation", "password"))
@@ -171,6 +171,13 @@ public class TC01_HomeTest {
         LogsUtils.info("User email: " + readDataFromJsonFile("signupInformation", "password"));
 
         Assert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "LOGIN_URL")));
+    }
+
+    @Test
+    public void clickOnProducButtonTC() throws IOException {
+        new P01_HomePage(getDriver()).clickOnProductButton();
+        LogsUtils.info("Product page URL: " + readDataFromProperties("environments", "PRODUCT_URL"));
+        Assert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "PRODUCT_URL")));
     }
 
     @AfterMethod

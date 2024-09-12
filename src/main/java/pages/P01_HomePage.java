@@ -12,6 +12,8 @@ public class P01_HomePage {
     private final By loggedInLocator = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[10]/a");
     private final By deleteAccountButtonLocator = By.cssSelector("[href='/delete_account']");
     private final By logOutButtonLocator = By.xpath("//div [@class='shop-menu pull-right'] //ul[1]//li[4]//a[1]");
+    private final By productButtonLocator = By.xpath("//div[@class='col-sm-8']//div//li[2] //a[1] ");
+
     // Create a web driver
     private final WebDriver driver;
 
@@ -46,5 +48,11 @@ public class P01_HomePage {
     public P02_SignupPage clickOnLogoutButton() {
         Utility.clickOnElement(driver, logOutButtonLocator);
         return new P02_SignupPage(driver);
+    }
+
+    // Methode to click on product button
+    public P06_ProductPage clickOnProductButton() {
+        Utility.clickOnElement(driver, productButtonLocator);
+        return new P06_ProductPage(driver);
     }
 }
