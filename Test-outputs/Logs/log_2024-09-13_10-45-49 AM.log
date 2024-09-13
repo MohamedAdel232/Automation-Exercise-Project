@@ -1,0 +1,10 @@
+[INFO] 13-09-2024 10:45:50 [main] [Tests.TC10_AddressDetails.setup(TC10_AddressDetails.java:32)] - chrome is opened
+[INFO] 13-09-2024 10:45:54 [main] [Tests.TC10_AddressDetails.setup(TC10_AddressDetails.java:36)] - https://automationexercise.com/ website is opened
+[INFO] 13-09-2024 10:45:54 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: verifyAddress started
+[INFO] 13-09-2024 10:45:55 [main] [Tests.TC10_AddressDetails.verifyAddress(TC10_AddressDetails.java:116)] - Login page URL: https://automationexercise.com/login
+[INFO] 13-09-2024 10:45:57 [main] [Tests.TC10_AddressDetails.verifyAddress(TC10_AddressDetails.java:122)] - User email: mohmdadl232@gmail.com
+[INFO] 13-09-2024 10:45:57 [main] [Tests.TC10_AddressDetails.verifyAddress(TC10_AddressDetails.java:123)] - User password: 123
+[INFO] 13-09-2024 10:45:59 [main] [Tests.TC10_AddressDetails.verifyAddress(TC10_AddressDetails.java:127)] - Product page URL: https://automationexercise.com/products
+[INFO] 13-09-2024 10:46:01 [main] [Tests.TC10_AddressDetails.verifyAddress(TC10_AddressDetails.java:133)] - Product page URL: null
+[INFO] 13-09-2024 10:46:02 [main] [Tests.TC10_AddressDetails.verifyAddress(TC10_AddressDetails.java:137)] - Product page URL: https://automationexercise.com/checkout
+[INFO] 13-09-2024 10:46:02 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: verifyAddress passed

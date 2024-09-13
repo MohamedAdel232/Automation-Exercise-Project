@@ -87,7 +87,6 @@ public class TC10_AddressDetails {
         LogsUtils.info("User password: " + readDataFromJsonFile("signupInformation", "password"));
         softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "HOME_URL")));
 
-
         new P01_HomePage(getDriver()).clickOnProductButton();
         LogsUtils.info("Product page URL: " + readDataFromProperties("environments", "PRODUCT_URL"));
         softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "PRODUCT_URL")));
@@ -107,10 +106,48 @@ public class TC10_AddressDetails {
                 .enterCommentAndPlaceOrder(readDataFromJsonFile("checkOut", "comment"));
         LogsUtils.info("Comment: " + readDataFromJsonFile("checkOut", "comment"));
         softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "PAYMENT_URL")));
-        
+
         softAssert.assertAll();
     }
 
+    @Test
+    public void verifyAddress() throws IOException {
+        new P01_HomePage(getDriver()).clickOnSignupButton();
+        LogsUtils.info("Login page URL: " + readDataFromProperties("environments", "LOGIN_URL"));
+        softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "LOGIN_URL")));
+
+        new P02_SignupPage(getDriver()).enterValidLoginData(readDataFromJsonFile("signupInformation", "email"),
+                        readDataFromJsonFile("signupInformation", "password"))
+                .clickOnLoginButton();
+        LogsUtils.info("User email: " + readDataFromJsonFile("signupInformation", "email"));
+        LogsUtils.info("User password: " + readDataFromJsonFile("signupInformation", "password"));
+        softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "HOME_URL")));
+
+        new P01_HomePage(getDriver()).clickOnProductButton();
+        LogsUtils.info("Product page URL: " + readDataFromProperties("environments", "PRODUCT_URL"));
+        softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "PRODUCT_URL")));
+
+
+        new P06_ProductPage(getDriver()).AddProductsToCart(readDataFromJsonFile("cartData", "numberOfProducts"))
+                .pressCartButton();
+        LogsUtils.info("Product page URL: " + readDataFromProperties("environments", "VIEW_CAR_URL"));
+        softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "VIEW_CART_URL")));
+
+        new P09_CartPage(getDriver()).proceedToCheckout();
+        LogsUtils.info("Product page URL: " + readDataFromProperties("environments", "CHECKOUT_URL"));
+
+        softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "CHECKOUT_URL")));
+
+        softAssert.assertTrue(new P10_AddressDetailsPage(getDriver()).
+                verifyDeliveryAddress(readDataFromJsonFile("signupInformation", "address1"),
+                        readDataFromJsonFile("signupInformation", "address2")));
+
+        softAssert.assertTrue(new P10_AddressDetailsPage(getDriver()).
+                verifyBillingAddress(readDataFromJsonFile("signupInformation", "address1"),
+                        readDataFromJsonFile("signupInformation", "address2")));
+
+        softAssert.assertAll();
+    }
 
     @AfterMethod
     public void quit() {

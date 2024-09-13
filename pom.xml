@@ -39,6 +39,7 @@
         <suite.FinishOrder>Test Runner/TestCase16_PlaceOrder.xml</suite.FinishOrder>
         <suite.CategoryProduct>Test Runner/TestCase18_ViewCategoryProducts.xml</suite.CategoryProduct>
         <suite.BrandProduct>Test Runner/TestCase19_BrandProducts.xml</suite.BrandProduct>
+        <suite.VerifyAddress>Test Runner/TestCase23_VerifyAddress.xml</suite.VerifyAddress>
 
     </properties>
 
@@ -73,7 +74,7 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <suiteXmlFiles>
-                        ${suite.BrandProduct}
+                        ${suite.VerifyAddress}
                     </suiteXmlFiles>
                 </configuration>
                 <dependencies>

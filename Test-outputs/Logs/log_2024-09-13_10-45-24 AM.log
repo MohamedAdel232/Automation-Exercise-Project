@@ -1,0 +1,17 @@
+[INFO] 13-09-2024 10:45:25 [main] [Tests.TC10_AddressDetails.setup(TC10_AddressDetails.java:32)] - chrome is opened
+[INFO] 13-09-2024 10:45:25 [main] [Listeners.iInvokedMethodListener.afterInvocation(iInvokedMethodListener.java:36)] - Test case: setup failed
+[ERROR] 13-09-2024 10:45:25 [main] [Utilities.Utility.takeScreenshoot(Utility.java:71)] - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.138)
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb298074816c347ab2100f8797987b4a, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62003}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62003/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eb298074816c347ab2100f8797987b4a
+[INFO] 13-09-2024 10:45:25 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: enterCommentAndPlaceOrder started
+[INFO] 13-09-2024 10:45:25 [main] [Listeners.iTestResultListener.onTestSkipped(iTestResultListener.java:20)] - Test case: enterCommentAndPlaceOrder skipped
+[INFO] 13-09-2024 10:45:25 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: proceedToCheckoutTC started
+[INFO] 13-09-2024 10:45:25 [main] [Listeners.iTestResultListener.onTestSkipped(iTestResultListener.java:20)] - Test case: proceedToCheckoutTC skipped
+[INFO] 13-09-2024 10:45:26 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: verifyAddress started
+[INFO] 13-09-2024 10:45:26 [main] [Listeners.iTestResultListener.onTestSkipped(iTestResultListener.java:20)] - Test case: verifyAddress skipped
