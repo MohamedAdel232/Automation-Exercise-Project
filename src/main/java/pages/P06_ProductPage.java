@@ -13,7 +13,8 @@ public class P06_ProductPage {
     private final By continueShoppingButtonLocator = By.xpath("//button [contains (@class, 'btn-success')]");
     private final By cartButtonLocator = By.xpath("//li //a [@href='/view_cart']");
     private final By addProductOneToCartButtonLocator = By.xpath("//a[@data-product-id='1']");
-
+    private final By brandLocator = By.xpath("(//ul [contains (@class,'nav-stacked')])");
+    private final By poloBrandLocator = By.xpath("((//ul [contains (@class,'nav-stacked')]) //li)[1]");
 
     // Create a web driver
     private final WebDriver driver;
@@ -67,4 +68,16 @@ public class P06_ProductPage {
         }
         return this;
     }
+
+    // Methode to verify brand section is visible
+    public boolean brandSectionVisibility() {
+        return Utility.findWebElement(driver, brandLocator).isDisplayed();
+    }
+
+    // Methode to click on polo brand
+    public P15_Brand1Page clickOnPoloBrand() {
+        Utility.clickOnElement(driver, poloBrandLocator);
+        return new P15_Brand1Page(driver);
+    }
+
 }

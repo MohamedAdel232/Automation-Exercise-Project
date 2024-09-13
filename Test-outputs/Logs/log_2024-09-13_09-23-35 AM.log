@@ -1,0 +1,5 @@
+[INFO] 13-09-2024 09:23:35 [main] [Tests.TC16_BrandTest.setup(TC16_BrandTest.java:35)] - chrome is opened
+[INFO] 13-09-2024 09:23:39 [main] [Tests.TC16_BrandTest.setup(TC16_BrandTest.java:39)] - https://automationexercise.com/ website is opened
+[INFO] 13-09-2024 09:23:39 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: brandProductTC started
+[INFO] 13-09-2024 09:23:42 [main] [Tests.TC16_BrandTest.brandProductTC(TC16_BrandTest.java:50)] - Product URL: https://automationexercise.com/products
+[INFO] 13-09-2024 09:23:43 [main] [Listeners.iInvokedMethodListener.afterInvocation(iInvokedMethodListener.java:36)] - Test case: brandProductTC failed
