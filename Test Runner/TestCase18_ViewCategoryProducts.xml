@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
+<suite name="View category product Suite">
+    <listeners>
+        <listener class-name="Listeners.iInvokedMethodListener"></listener>
+        <listener class-name="Listeners.iTestResultListener"></listener>
+    </listeners>
+
+    <test name="View category product Test">
+        <classes>
+            <class name="Tests.TC14_CategoryProduct2Test">
+                <methods>
+                    <include name="verifyCategoryProduct"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

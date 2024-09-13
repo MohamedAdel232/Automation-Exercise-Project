@@ -1,0 +1,7 @@
+[INFO] 13-09-2024 08:42:34 [main] [Tests.TC14_CategoryProduct2Test.setup(TC14_CategoryProduct2Test.java:33)] - chrome is opened
+[INFO] 13-09-2024 08:42:37 [main] [Tests.TC14_CategoryProduct2Test.setup(TC14_CategoryProduct2Test.java:37)] - https://automationexercise.com/ website is opened
+[INFO] 13-09-2024 08:42:37 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: verifyCategoryProduct started
+[INFO] 13-09-2024 08:42:37 [main] [Tests.TC14_CategoryProduct2Test.verifyCategoryProduct(TC14_CategoryProduct2Test.java:48)] - Home page URL: https://automationexercise.com/
+[INFO] 13-09-2024 08:42:40 [main] [Tests.TC14_CategoryProduct2Test.verifyCategoryProduct(TC14_CategoryProduct2Test.java:51)] - Home page URL: https://automationexercise.com/category_products/1
+[INFO] 13-09-2024 08:42:42 [main] [Tests.TC14_CategoryProduct2Test.verifyCategoryProduct(TC14_CategoryProduct2Test.java:57)] - Home page URL: https://automationexercise.com/category_products/3
+[INFO] 13-09-2024 08:42:42 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: verifyCategoryProduct passed

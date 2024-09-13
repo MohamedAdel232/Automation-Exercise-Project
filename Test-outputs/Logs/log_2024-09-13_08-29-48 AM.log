@@ -1,0 +1,4 @@
+[INFO] 13-09-2024 08:29:49 [main] [Tests.TC13_CategoryProduct1Test.setup(TC13_CategoryProduct1Test.java:32)] - chrome is opened
+[INFO] 13-09-2024 08:29:52 [main] [Tests.TC13_CategoryProduct1Test.setup(TC13_CategoryProduct1Test.java:36)] - https://automationexercise.com/ website is opened
+[INFO] 13-09-2024 08:29:52 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: selectDressSectionTC started
+[INFO] 13-09-2024 08:29:55 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: selectDressSectionTC passed

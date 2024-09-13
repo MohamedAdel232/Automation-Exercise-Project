@@ -10,6 +10,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import pages.P01_HomePage;
 
 import java.io.IOException;
@@ -21,7 +22,6 @@ import static Utilities.DataUtils.readDataFromProperties;
 
 @Listeners({iTestResultListener.class, iInvokedMethodListener.class})
 public class TC01_HomeTest {
-
     // Read data from json file
     private static final String password = readDataFromJsonFile("signupInformation", "password");
     private static final String day = readDataFromJsonFile("signupInformation", "day");
@@ -37,7 +37,7 @@ public class TC01_HomeTest {
     private static final String city = readDataFromJsonFile("signupInformation", "city");
     private static final String zipcode = readDataFromJsonFile("signupInformation", "zipcode");
     private static final String mobileNumber = readDataFromJsonFile("signupInformation", "mobileNumber");
-
+    SoftAssert softAssert = new SoftAssert();
     // Create a web driver
     private WebDriver driver;
 
@@ -180,6 +180,18 @@ public class TC01_HomeTest {
         Assert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "PRODUCT_URL")));
     }
 
+    @Test
+    void verifyCategorySectionVisibilityTC() {
+        Assert.assertTrue(new P01_HomePage(getDriver()).verifyCategorySectionVisibility());
+    }
+
+    @Test
+    void selectDressSectionTC() throws IOException {
+        new P01_HomePage(getDriver()).selectDressSection();
+        softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "CATEGORY_PAGE1_URL")));
+        softAssert.assertAll();
+    }
+    
     @AfterMethod
     public void quit() {
         // Quit the browser and delete the driver

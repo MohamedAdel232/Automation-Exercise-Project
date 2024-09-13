@@ -13,6 +13,9 @@ public class P01_HomePage {
     private final By deleteAccountButtonLocator = By.cssSelector("[href='/delete_account']");
     private final By logOutButtonLocator = By.xpath("//div [@class='shop-menu pull-right'] //ul[1]//li[4]//a[1]");
     private final By productButtonLocator = By.xpath("//div[@class='col-sm-8']//div//li[2] //a[1] ");
+    private final By categorySectionLocator = By.xpath("//div [@id='accordian']");
+    private final By womenCategory = By.xpath("(//a[@data-toggle='collapse'])[1]");
+    private final By dressSection = By.xpath("(//div [@id='Women'] //div //ul //li //a)[1]");
 
     // Create a web driver
     private final WebDriver driver;
@@ -54,5 +57,17 @@ public class P01_HomePage {
     public P06_ProductPage clickOnProductButton() {
         Utility.clickOnElement(driver, productButtonLocator);
         return new P06_ProductPage(driver);
+    }
+
+    // Methode to verify category section visibility
+    public boolean verifyCategorySectionVisibility() {
+        return Utility.findWebElement(driver, categorySectionLocator).isDisplayed();
+    }
+
+    // Methode to select dress section from women category
+    public P13_CategoryProduct1Page selectDressSection() {
+        Utility.clickOnElement(driver, womenCategory);
+        Utility.clickOnElement(driver, dressSection);
+        return new P13_CategoryProduct1Page(driver);
     }
 }

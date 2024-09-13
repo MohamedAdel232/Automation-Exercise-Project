@@ -1,0 +1,4 @@
+[INFO] 13-09-2024 08:28:24 [main] [Tests.TC13_CategoryProduct1Test.setup(TC13_CategoryProduct1Test.java:33)] - chrome is opened
+[INFO] 13-09-2024 08:28:27 [main] [Tests.TC13_CategoryProduct1Test.setup(TC13_CategoryProduct1Test.java:37)] - https://automationexercise.com/ website is opened
+[INFO] 13-09-2024 08:28:27 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: verifyCategoryTextVisibilityTC started
+[INFO] 13-09-2024 08:28:28 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: verifyCategoryTextVisibilityTC passed
