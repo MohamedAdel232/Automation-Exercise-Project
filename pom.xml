@@ -40,6 +40,7 @@
         <suite.CategoryProduct>Test Runner/TestCase18_ViewCategoryProducts.xml</suite.CategoryProduct>
         <suite.BrandProduct>Test Runner/TestCase19_BrandProducts.xml</suite.BrandProduct>
         <suite.VerifyAddress>Test Runner/TestCase23_VerifyAddress.xml</suite.VerifyAddress>
+        <suite.DonwloadInvoice>Test Runner/TestCase24_Download_Invoice.xml</suite.DonwloadInvoice>
 
     </properties>
 
@@ -74,7 +75,7 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <suiteXmlFiles>
-                        ${suite.VerifyAddress}
+                        ${suite.DonwloadInvoice}
                     </suiteXmlFiles>
                 </configuration>
                 <dependencies>

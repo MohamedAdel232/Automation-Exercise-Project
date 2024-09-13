@@ -1,0 +1,19 @@
+[INFO] 13-09-2024 11:41:39 [main] [Tests.TC12_OrderPlaced.setup(TC12_OrderPlaced.java:34)] - chrome is opened
+[INFO] 13-09-2024 11:41:42 [main] [Tests.TC12_OrderPlaced.setup(TC12_OrderPlaced.java:38)] - https://automationexercise.com/ website is opened
+[INFO] 13-09-2024 11:41:42 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: fullOperation started
+[INFO] 13-09-2024 11:41:42 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:155)] - Home URL: https://automationexercise.com/
+[INFO] 13-09-2024 11:41:43 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:158)] - Login page URL: https://automationexercise.com/login
+[INFO] 13-09-2024 11:41:45 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:164)] - User email: mohmdadl232@gmail.com
+[INFO] 13-09-2024 11:41:45 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:165)] - User password: 123
+[INFO] 13-09-2024 11:41:52 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:171)] - Product URL: https://automationexercise.com/products
+[INFO] 13-09-2024 11:41:56 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:175)] - Product page URL: null
+[INFO] 13-09-2024 11:41:57 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:181)] - Checkout URL: https://automationexercise.com/checkout
+[INFO] 13-09-2024 11:42:04 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:188)] - Checkout URL: https://automationexercise.com/checkout
+[INFO] 13-09-2024 11:42:08 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:197)] - Name: Mohamed
+[INFO] 13-09-2024 11:42:08 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:198)] - Card number: 123
+[INFO] 13-09-2024 11:42:08 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:199)] - cvc: 123
+[INFO] 13-09-2024 11:42:08 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:200)] - Month expiration: 12
+[INFO] 13-09-2024 11:42:08 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:201)] - Year expiration: 2025
+[INFO] 13-09-2024 11:42:08 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:202)] - Order Placed page URL: https://automationexercise.com/payment_done/0
+[INFO] 13-09-2024 11:42:19 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:215)] - Checkout URL: https://automationexercise.com/
+[INFO] 13-09-2024 11:42:19 [main] [Listeners.iTestResultListener.onTestSuccess(iTestResultListener.java:15)] - Test case: fullOperation passed

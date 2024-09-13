@@ -1,0 +1,9 @@
+[INFO] 13-09-2024 11:36:20 [main] [Tests.TC12_OrderPlaced.setup(TC12_OrderPlaced.java:34)] - chrome is opened
+[INFO] 13-09-2024 11:36:25 [main] [Tests.TC12_OrderPlaced.setup(TC12_OrderPlaced.java:38)] - https://automationexercise.com/ website is opened
+[INFO] 13-09-2024 11:36:25 [main] [Listeners.iTestResultListener.onTestStart(iTestResultListener.java:10)] - Test case: fullOperation started
+[INFO] 13-09-2024 11:36:25 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:155)] - Home URL: https://automationexercise.com/
+[INFO] 13-09-2024 11:36:26 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:158)] - Login page URL: https://automationexercise.com/login
+[INFO] 13-09-2024 11:36:29 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:164)] - User email: mohmdadl232@gmail.com
+[INFO] 13-09-2024 11:36:29 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:165)] - User password: 123
+[INFO] 13-09-2024 11:36:35 [main] [Tests.TC12_OrderPlaced.fullOperation(TC12_OrderPlaced.java:171)] - Product URL: https://automationexercise.com/products
+[INFO] 13-09-2024 11:36:36 [main] [Listeners.iInvokedMethodListener.afterInvocation(iInvokedMethodListener.java:36)] - Test case: fullOperation failed

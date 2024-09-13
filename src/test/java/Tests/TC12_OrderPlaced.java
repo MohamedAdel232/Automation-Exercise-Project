@@ -12,6 +12,8 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.*;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.time.Duration;
 
@@ -106,11 +108,9 @@ public class TC12_OrderPlaced {
         LogsUtils.info("User password: " + readDataFromJsonFile("signupInformation", "password"));
         softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "HOME_URL")));
 
-
         new P01_HomePage(getDriver()).clickOnProductButton();
         LogsUtils.info("Product page URL: " + readDataFromProperties("environments", "PRODUCT_URL"));
         softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "PRODUCT_URL")));
-
 
         new P06_ProductPage(getDriver()).AddProductsToCart(readDataFromJsonFile("cartData", "numberOfProducts"))
                 .pressCartButton();
@@ -146,6 +146,73 @@ public class TC12_OrderPlaced {
         softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "HOME_URL")));
 
         softAssert.assertAll();
+    }
+
+    @Test
+    public void fullOperation() throws IOException, AWTException {
+        softAssert.assertTrue(Utility.verifyURL(getDriver(),
+                readDataFromProperties("environments", "HOME_URL")));
+        LogsUtils.info("Home URL: " + readDataFromProperties("environments", "HOME_URL"));
+
+        new P01_HomePage(getDriver()).clickOnSignupButton();
+        LogsUtils.info("Login page URL: " + readDataFromProperties("environments", "LOGIN_URL"));
+        softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "LOGIN_URL")));
+
+        new P02_SignupPage(getDriver()).enterValidLoginData(readDataFromJsonFile("signupInformation", "email"),
+                        readDataFromJsonFile("signupInformation", "password"))
+                .clickOnLoginButton();
+        LogsUtils.info("User email: " + readDataFromJsonFile("signupInformation", "email"));
+        LogsUtils.info("User password: " + readDataFromJsonFile("signupInformation", "password"));
+        softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "HOME_URL")));
+
+        new P01_HomePage(getDriver()).clickOnProductButton();
+        softAssert.assertTrue(Utility.verifyURL(getDriver(),
+                readDataFromProperties("environments", "HOME_URL")));
+        LogsUtils.info("Product URL: " + readDataFromProperties("environments", "PRODUCT_URL"));
+
+        new P06_ProductPage(getDriver()).AddProductsToCart(readDataFromJsonFile("cartData", "numberOfProducts"))
+                .pressCartButton();
+        LogsUtils.info("Product page URL: " + readDataFromProperties("environments", "VIEW_CAR_URL"));
+        softAssert.assertTrue(Utility.verifyURL(getDriver(), readDataFromProperties("environments", "VIEW_CART_URL")));
+
+        new P09_CartPage(getDriver()).proceedToCheckout();
+        softAssert.assertTrue(Utility.verifyURL(getDriver(),
+                readDataFromProperties("environments", "CHECKOUT_URL")));
+        LogsUtils.info("Checkout URL: " + readDataFromProperties("environments", "CHECKOUT_URL"));
+
+        softAssert.assertTrue(new P10_AddressDetailsPage(getDriver()).reviewAddressAndOrderDetails());
+
+        new P10_AddressDetailsPage(getDriver()).enterCommentAndPlaceOrder(readDataFromJsonFile("checkOut", "comment"));
+        softAssert.assertTrue(Utility.verifyURL(getDriver(),
+                readDataFromProperties("environments", "CHECKOUT_URL")));
+        LogsUtils.info("Checkout URL: " + readDataFromProperties("environments", "CHECKOUT_URL"));
+
+        new P11_PaymentPage(getDriver()).fillPaymentDataAndConfirm(
+                readDataFromJsonFile("payment", "name"),
+                readDataFromJsonFile("payment", "cardNumber"),
+                readDataFromJsonFile("payment", "cvc"),
+                readDataFromJsonFile("payment", "monthExpiration"),
+                readDataFromJsonFile("payment", "yearExpiration"));
+
+        LogsUtils.info("Name: " + readDataFromJsonFile("payment", "name"));
+        LogsUtils.info("Card number: " + readDataFromJsonFile("payment", "cardNumber"));
+        LogsUtils.info("cvc: " + readDataFromJsonFile("payment", "cvc"));
+        LogsUtils.info("Month expiration: " + readDataFromJsonFile("payment", "monthExpiration"));
+        LogsUtils.info("Year expiration: " + readDataFromJsonFile("payment", "yearExpiration"));
+        LogsUtils.info("Order Placed page URL: " + readDataFromProperties("environments", "ORDER_PLACED_URL"));
+
+        new P12_OrderPlaced(getDriver()).clickOnDownloadInvoiceButton();
+        Robot robot = new Robot();
+        robot.delay(2000);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.delay(2000);
+
+        new P12_OrderPlaced(getDriver()).finishTheOrder();
+
+        softAssert.assertTrue(Utility.verifyURL(getDriver(),
+                readDataFromProperties("environments", "HOME_URL")));
+        LogsUtils.info("Checkout URL: " + readDataFromProperties("environments", "HOME_URL"));
     }
 
     @AfterMethod

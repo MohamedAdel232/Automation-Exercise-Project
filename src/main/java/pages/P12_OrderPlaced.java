@@ -8,6 +8,7 @@ public class P12_OrderPlaced {
     // Page locators
     private final By orderPlacedLocator = By.xpath("(//b)[2]");
     private final By continueButtonLocator = By.xpath("//a [@data-qa='continue-button']");
+    private final By downloadInvoiceButtonLocator = By.xpath("//a [contains(@class,'btn-default')]");
 
     // Create a web driver
     private final WebDriver driver;
@@ -26,5 +27,11 @@ public class P12_OrderPlaced {
     public P01_HomePage finishTheOrder() {
         Utility.clickOnElement(driver, continueButtonLocator);
         return new P01_HomePage(driver);
+    }
+
+    // Click on download invoice button
+    public P12_OrderPlaced clickOnDownloadInvoiceButton() {
+        Utility.clickOnElement(driver, downloadInvoiceButtonLocator);
+        return this;
     }
 }
